@@ -18,13 +18,13 @@ import { HarrisonHero } from "@/components/site/HarrisonHero";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Products - Dectrocel ai" },
+      { title: "Products - Dectrocel" },
       {
         name: "description",
         content:
-          "Dectrocel ai products for radiology AI, imaging workflows, PACS integration, and healthcare AI deployment.",
+          "Dectrocel products for radiology AI, imaging workflows, PACS integration, and healthcare AI deployment.",
       },
-      { property: "og:title", content: "Products - Dectrocel ai" },
+      { property: "og:title", content: "Products - Dectrocel" },
       { property: "og:description", content: "AI products for clinical imaging teams." },
     ],
     links: [{ rel: "canonical", href: "/products" }],
@@ -271,10 +271,10 @@ function ProductsPage() {
           <div className="mx-auto max-w-[760px] text-center">
             <p className="text-sm font-extrabold uppercase text-[#177fed]">Coming soon</p>
             <h2 className="mt-5 text-[38px] font-extrabold leading-[1.08] text-[#061a63] md:text-[58px]">
-              Upcoming products in the Dectrocel ai pipeline.
+              Upcoming products in the Dectrocel pipeline.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold leading-8 text-[#52617f]">
-              The next wave of imaging AI products extends Dectrocel ai across mammography and
+              The next wave of imaging AI products extends Dectrocel across mammography and
               PET-CT workflows.
             </p>
           </div>

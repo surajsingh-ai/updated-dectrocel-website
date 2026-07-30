@@ -8,11 +8,11 @@ const publicationUrl = "https://www.nature.com/articles/s41598-024-71346-x";
 export const Route = createFileRoute("/evidence")({
   head: () => ({
     meta: [
-      { title: "Evidence - Dectrocel ai" },
+      { title: "Evidence - Dectrocel" },
       {
         name: "description",
         content:
-          "Clinical evidence, regulatory alignment, and research credibility behind Dectrocel ai products.",
+          "Clinical evidence, regulatory alignment, and research credibility behind Dectrocel products.",
       },
     ],
     links: [{ rel: "canonical", href: "/evidence" }],

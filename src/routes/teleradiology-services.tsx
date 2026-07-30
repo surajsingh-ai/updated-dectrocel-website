@@ -25,13 +25,13 @@ import { HarrisonHero } from "@/components/site/HarrisonHero";
 export const Route = createFileRoute("/teleradiology-services")({
   head: () => ({
     meta: [
-      { title: "Teleradiology Services - Dectrocel ai" },
+      { title: "Teleradiology Services - Dectrocel" },
       {
         name: "description",
         content:
-          "Dectrocel ai teleradiology services combine radiology workflow support, AI triage, PACS connectivity, and reporting operations for hospitals and diagnostic networks.",
+          "Dectrocel teleradiology services combine radiology workflow support, AI triage, PACS connectivity, and reporting operations for hospitals and diagnostic networks.",
       },
-      { property: "og:title", content: "Teleradiology Services - Dectrocel ai" },
+      { property: "og:title", content: "Teleradiology Services - Dectrocel" },
       {
         property: "og:description",
         content: "AI-enabled teleradiology workflow services for scalable remote reporting.",
@@ -175,7 +175,7 @@ function TeleradiologyServicesPage() {
       <HarrisonHero
         eyebrow="Teleradiology Services"
         title="Teleradiology workflows built for speed, quality, and scale."
-        subtitle="Dectrocel ai supports teleradiology providers, hospitals, and diagnostic networks with AI-enabled triage, PACS connectivity, and reporting operations."
+        subtitle="Dectrocel supports teleradiology providers, hospitals, and diagnostic networks with AI-enabled triage, PACS connectivity, and reporting operations."
         image={pipelineImg}
         imageClassName="object-center"
         cta="Book a demo"
@@ -265,7 +265,7 @@ function TeleradiologyServicesPage() {
               Keep remote reporting moving without losing clinical control.
             </h2>
             <p className="mt-6 text-lg font-medium leading-8 text-[#52617f]">
-              From study routing to report turnaround, Dectrocel ai helps imaging teams create
+              From study routing to report turnaround, Dectrocel helps imaging teams create
               reliable teleradiology operations around their existing clinical stack.
             </p>
             <Link

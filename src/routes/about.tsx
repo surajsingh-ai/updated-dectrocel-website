@@ -13,11 +13,11 @@ import { HarrisonHero } from "@/components/site/HarrisonHero";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Company - Dectrocel ai" },
+      { title: "Company - Dectrocel" },
       {
         name: "description",
         content:
-          "Dectrocel ai is building healthcare AI products for radiology and clinical imaging teams.",
+          "Dectrocel is building healthcare AI products for radiology and clinical imaging teams.",
       },
     ],
     links: [{ rel: "canonical", href: "/about" }],

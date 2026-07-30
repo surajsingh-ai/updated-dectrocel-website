@@ -18,7 +18,7 @@ import { HarrisonHero } from "@/components/site/HarrisonHero";
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions - Dectrocel ai" },
+      { title: "Solutions - Dectrocel" },
       {
         name: "description",
         content:

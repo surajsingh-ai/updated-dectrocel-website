@@ -55,7 +55,7 @@ export function Footer() {
             className="font-display text-4xl font-extrabold leading-none text-white"
             aria-label="Dectrocel home"
           >
-            Dectrocel ai
+            Dectrocel
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-7 text-white/66">
             AI imaging products for radiology teams, hospitals, screening programs, and care

@@ -10,10 +10,10 @@ import { submitContactMessage } from "@/lib/api/contact.functions";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact - Dectrocel ai" },
+      { title: "Contact - Dectrocel" },
       {
         name: "description",
-        content: "Talk to Dectrocel ai about deploying healthcare AI in your organization.",
+        content: "Talk to Dectrocel about deploying healthcare AI in your organization.",
       },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -57,7 +57,7 @@ function ContactPage() {
       <HarrisonHero
         eyebrow="Contact"
         title="Bring healthcare AI to your team."
-        subtitle="Tell us about your organization and we'll help map the right Dectrocel ai workflow."
+        subtitle="Tell us about your organization and we'll help map the right Dectrocel workflow."
         image={heroDoctor}
         imageClassName="object-[58%_18%] md:object-[56%_12%]"
         cta="Book a demo"

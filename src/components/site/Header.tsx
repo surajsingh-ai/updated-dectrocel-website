@@ -24,7 +24,7 @@ export function Header() {
             aria-label="Dectrocel home"
             onClick={() => setOpen(false)}
           >
-            Dectrocel ai
+            Dectrocel
           </Link>
           <nav className="hidden items-center gap-9 lg:flex">
             {links.map((l) => (
