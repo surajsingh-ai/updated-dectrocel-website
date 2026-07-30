@@ -169,15 +169,6 @@ const whyChoosePoints = [
   "Scalable solution for hospitals and diagnostic centers",
 ];
 
-const benefits = [
-  "Faster diagnosis",
-  "Improved workflow efficiency",
-  "Reduced reporting time",
-  "Better clinical decision support",
-  "Enhanced patient care",
-  "Secure and reliable reporting",
-];
-
 function TeleradiologyServicesPage() {
   return (
     <main className="bg-white text-[#061a63]">
@@ -232,7 +223,7 @@ function TeleradiologyServicesPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <div className="mt-12">
             <article className="bg-[#061a63] p-8 text-white md:p-10">
               <h3 className="text-3xl font-extrabold leading-tight">
                 Why Choose Our Teleradiology Service?
@@ -242,18 +233,6 @@ function TeleradiologyServicesPage() {
                   <div key={point} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-1 size-5 shrink-0 text-[#8bc4ff]" />
                     <span className="text-sm font-semibold leading-7 text-white/82">{point}</span>
-                  </div>
-                ))}
-              </div>
-            </article>
-
-            <article className="border border-[#c8dff8] bg-[#f5f9ff] p-8 md:p-10">
-              <h3 className="text-3xl font-extrabold leading-tight text-[#061a63]">Benefits</h3>
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-                {benefits.map((benefit) => (
-                  <div key={benefit} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 size-5 shrink-0 text-[#177fed]" />
-                    <span className="text-sm font-semibold leading-7 text-[#52617f]">{benefit}</span>
                   </div>
                 ))}
               </div>
