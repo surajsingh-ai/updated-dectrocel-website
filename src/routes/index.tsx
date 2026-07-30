@@ -55,9 +55,9 @@ function Hero() {
   ];
 
   return (
-    <section className="bg-white px-6 pb-14 pt-28 md:pt-32 lg:px-8">
+    <section className="bg-white px-4 pb-14 pt-24 sm:px-6 md:pt-32 lg:px-8">
       <div className="mx-auto max-w-[1240px]">
-        <div className="relative h-[360px] overflow-hidden rounded-[5px] bg-slate-200 shadow-sm md:h-[600px]">
+        <div className="relative h-[340px] overflow-hidden rounded-[5px] bg-slate-200 shadow-sm sm:h-[380px] md:h-[600px]">
           <img
             src={heroDoctor}
             alt="Indian doctor beside radiology monitors using healthcare AI"
@@ -68,16 +68,16 @@ function Hero() {
           <div className="absolute right-[12%] top-[58%] hidden h-20 w-20 bg-[#147eea]/82 md:block" />
           <div className="absolute bottom-[15%] right-0 hidden h-14 w-[20%] bg-[#87b9e7]/34 md:block" />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center">
-            <h1 className="max-w-[860px] text-[40px] font-extrabold leading-[1.14] text-white drop-shadow-md md:text-[66px]">
+            <h1 className="max-w-[860px] text-[34px] font-extrabold leading-[1.14] text-white drop-shadow-md sm:text-[40px] md:text-[66px]">
               Reimagining the future of healthcare with AI
             </h1>
-            <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-white/90 drop-shadow">
+            <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-white/90 drop-shadow md:mt-5 md:text-lg md:leading-8">
               AI support for CT thorax and abdomen, MRI brain, skeletal imaging, mammography,
               PET-CT, X-ray workflows, and clinical decision support.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-3 bg-white/42 px-5 py-3 text-xl font-extrabold text-white backdrop-blur-[2px] transition-colors hover:bg-white/55"
+              className="mt-6 inline-flex items-center gap-3 bg-white/42 px-4 py-3 text-base font-extrabold text-white backdrop-blur-[2px] transition-colors hover:bg-white/55 md:mt-8 md:px-5 md:text-xl"
             >
               Get started
               <span className="grid size-8 place-items-center bg-[#1683eb] text-white">

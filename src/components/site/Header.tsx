@@ -16,11 +16,11 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
-      <div className="mx-auto max-w-[1320px] px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between">
+      <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
+        <div className="flex h-20 items-center justify-between md:h-24">
           <Link
             to="/"
-            className="font-display text-[34px] font-extrabold leading-none text-[#061a63] md:text-[42px]"
+            className="font-display text-[29px] font-extrabold leading-none text-[#061a63] sm:text-[34px] md:text-[42px]"
             aria-label="Dectrocel home"
             onClick={() => setOpen(false)}
           >
@@ -58,7 +58,7 @@ export function Header() {
           </div>
         </div>
         {open && (
-          <div className="border-t border-slate-100 bg-white py-4 lg:hidden">
+          <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-slate-100 bg-white py-4 lg:hidden">
             <nav className="flex flex-col gap-1">
               {links.map((l) => (
                 <Link

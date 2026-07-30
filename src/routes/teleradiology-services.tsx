@@ -181,22 +181,22 @@ function TeleradiologyServicesPage() {
         cta="Book a demo"
       />
 
-      <section className="bg-white px-6 py-20 lg:px-8">
+      <section className="bg-white px-4 py-16 sm:px-6 md:py-20 lg:px-8">
         <div className="mx-auto max-w-[1240px]">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-extrabold uppercase text-[#177fed]">AI-Assisted Teleradiology</p>
-            <h2 className="mt-4 text-[34px] font-extrabold leading-tight text-[#061a63] md:text-[48px]">
+            <h2 className="mt-4 text-[30px] font-extrabold leading-tight text-[#061a63] sm:text-[34px] md:text-[48px]">
               AI-Assisted Teleradiology
             </h2>
-            <p className="mt-5 text-lg font-semibold leading-8 text-[#52617f]">
+            <p className="mt-5 text-base font-semibold leading-7 text-[#52617f] md:text-lg md:leading-8">
               Delivering faster, accurate, and reliable radiology reports by combining Artificial
               Intelligence with expert radiologist review.
             </p>
           </div>
 
-          <div className="mx-auto mt-10 max-w-4xl bg-[#f5f9ff] p-8 text-center md:p-10">
+          <div className="mx-auto mt-10 max-w-4xl bg-[#f5f9ff] p-6 text-center sm:p-8 md:p-10">
             <h3 className="text-2xl font-extrabold text-[#061a63]">About the Service</h3>
-            <p className="mt-4 text-lg font-medium leading-8 text-[#52617f]">
+            <p className="mt-4 text-base font-medium leading-7 text-[#52617f] md:text-lg md:leading-8">
               Our AI-assisted teleradiology platform helps healthcare providers receive high-quality
               diagnostic reports with a fast turnaround time. AI performs the initial image analysis,
               while experienced radiologists carefully review, validate, and approve every report
@@ -224,8 +224,8 @@ function TeleradiologyServicesPage() {
           </div>
 
           <div className="mt-12">
-            <article className="bg-[#061a63] p-8 text-white md:p-10">
-              <h3 className="text-3xl font-extrabold leading-tight">
+            <article className="bg-[#061a63] p-6 text-white sm:p-8 md:p-10">
+              <h3 className="text-[28px] font-extrabold leading-tight md:text-3xl">
                 Why Choose Our Teleradiology Service?
               </h3>
               <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -239,17 +239,17 @@ function TeleradiologyServicesPage() {
             </article>
           </div>
 
-          <div className="mt-12 bg-[#eef6ff] p-8 text-center md:p-10">
-            <h3 className="text-[32px] font-extrabold leading-tight text-[#061a63] md:text-[44px]">
+          <div className="mt-12 bg-[#eef6ff] p-6 text-center sm:p-8 md:p-10">
+            <h3 className="text-[28px] font-extrabold leading-tight text-[#061a63] sm:text-[32px] md:text-[44px]">
               Experience Smarter Teleradiology
             </h3>
-            <p className="mx-auto mt-5 max-w-3xl text-lg font-medium leading-8 text-[#52617f]">
+            <p className="mx-auto mt-5 max-w-3xl text-base font-medium leading-7 text-[#52617f] md:text-lg md:leading-8">
               Combine the speed of AI with the expertise of experienced radiologists to deliver
               accurate, reliable, and timely diagnostic reports for your healthcare organization.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center justify-center gap-3 bg-[#177fed] px-6 py-4 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63]"
+              className="mt-8 inline-flex max-w-full items-center justify-center gap-3 bg-[#177fed] px-5 py-4 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63] sm:px-6"
             >
               Request a Demo <ArrowUpRight className="size-4" />
             </Link>
@@ -257,20 +257,20 @@ function TeleradiologyServicesPage() {
         </div>
       </section>
 
-      <section className="bg-[#f5f9ff] px-6 py-20 lg:px-8">
+      <section className="bg-[#f5f9ff] px-4 py-16 sm:px-6 md:py-20 lg:px-8">
         <div className="mx-auto grid max-w-[1240px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p className="text-sm font-extrabold uppercase text-[#177fed]">Service model</p>
-            <h2 className="mt-4 text-[34px] font-extrabold leading-tight md:text-[48px]">
+            <h2 className="mt-4 text-[30px] font-extrabold leading-tight sm:text-[34px] md:text-[48px]">
               Keep remote reporting moving without losing clinical control.
             </h2>
-            <p className="mt-6 text-lg font-medium leading-8 text-[#52617f]">
+            <p className="mt-5 text-base font-medium leading-7 text-[#52617f] md:mt-6 md:text-lg md:leading-8">
               From study routing to report turnaround, Dectrocel helps imaging teams create
               reliable teleradiology operations around their existing clinical stack.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-3 bg-[#177fed] px-5 py-3 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63]"
+              className="mt-8 inline-flex max-w-full items-center justify-center gap-3 bg-[#177fed] px-5 py-3 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63]"
             >
               Discuss your workflow <ArrowUpRight className="size-4" />
             </Link>
@@ -297,14 +297,14 @@ function TeleradiologyServicesPage() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 lg:px-8">
+      <section className="bg-white px-4 py-16 sm:px-6 md:py-20 lg:px-8">
         <div className="mx-auto max-w-[1240px]">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-extrabold uppercase text-[#177fed]">How it works</p>
-            <h2 className="mt-4 text-[34px] font-extrabold leading-tight text-[#061a63] md:text-[48px]">
+            <h2 className="mt-4 text-[30px] font-extrabold leading-tight text-[#061a63] sm:text-[34px] md:text-[48px]">
               How Our Teleradiology Workflow Works
             </h2>
-            <p className="mt-5 text-lg font-medium leading-8 text-[#52617f]">
+            <p className="mt-5 text-base font-medium leading-7 text-[#52617f] md:text-lg md:leading-8">
               A clean review path that keeps AI speed and radiologist expertise in the same
               diagnostic workflow.
             </p>
@@ -315,7 +315,7 @@ function TeleradiologyServicesPage() {
               {reportWorkflow.map((step, index) => (
                 <article
                   key={step.title}
-                  className="relative min-h-[308px] border border-[#b9d8ff] bg-white p-6 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.12)]"
+                  className="relative border border-[#b9d8ff] bg-white p-6 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.12)] lg:min-h-[308px]"
                 >
                   {index < reportWorkflow.length - 1 && (
                     <div className="absolute -right-5 top-10 z-10 hidden size-9 place-items-center bg-white text-[#177fed] lg:grid">
@@ -355,14 +355,14 @@ function TeleradiologyServicesPage() {
             ))}
           </div>
 
-          <div className="mx-auto mt-8 max-w-4xl border-l-4 border-[#177fed] bg-[#f5f9ff] px-6 py-5 text-center text-lg font-extrabold leading-8 text-[#061a63]">
+          <div className="mx-auto mt-8 max-w-4xl border-l-4 border-[#177fed] bg-[#f5f9ff] px-5 py-5 text-center text-base font-extrabold leading-7 text-[#061a63] md:px-6 md:text-lg md:leading-8">
             Combining AI speed with expert radiologist review to deliver fast, accurate, and
             reliable diagnostic reports.
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 lg:px-8">
+      <section className="px-4 py-16 sm:px-6 md:py-20 lg:px-8">
         <div className="mx-auto grid max-w-[1240px] gap-10 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden bg-slate-100">
             <img
@@ -373,7 +373,7 @@ function TeleradiologyServicesPage() {
           </div>
           <div>
             <p className="text-sm font-extrabold uppercase text-[#177fed]">Connected workflow</p>
-            <h2 className="mt-4 text-[34px] font-extrabold leading-tight md:text-[48px]">
+            <h2 className="mt-4 text-[30px] font-extrabold leading-tight sm:text-[34px] md:text-[48px]">
               One operating layer for distributed radiology teams.
             </h2>
             <div className="mt-8 grid gap-4">
@@ -382,7 +382,7 @@ function TeleradiologyServicesPage() {
                   <span className="grid size-9 shrink-0 place-items-center bg-[#061a63] text-sm font-extrabold text-white">
                     {index + 1}
                   </span>
-                  <p className="text-lg font-semibold leading-8 text-[#52617f]">{step}</p>
+                  <p className="text-base font-semibold leading-7 text-[#52617f] md:text-lg md:leading-8">{step}</p>
                 </div>
               ))}
             </div>
@@ -390,11 +390,11 @@ function TeleradiologyServicesPage() {
         </div>
       </section>
 
-      <section className="bg-[#061a63] px-6 py-20 text-white lg:px-8">
+      <section className="bg-[#061a63] px-4 py-16 text-white sm:px-6 md:py-20 lg:px-8">
         <div className="mx-auto grid max-w-[1240px] gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
             <p className="text-sm font-extrabold uppercase text-[#8bc4ff]">Where it fits</p>
-            <h2 className="mt-4 text-[34px] font-extrabold leading-tight md:text-[48px]">
+            <h2 className="mt-4 text-[30px] font-extrabold leading-tight sm:text-[34px] md:text-[48px]">
               Coverage for everyday volume, urgent studies, and growth periods.
             </h2>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -416,20 +416,20 @@ function TeleradiologyServicesPage() {
         </div>
       </section>
 
-      <section className="bg-[#eef6ff] px-6 py-16 lg:px-8">
+      <section className="bg-[#eef6ff] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-[1240px] flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <div className="flex items-center gap-3 text-sm font-extrabold uppercase text-[#177fed]">
               <Globe2 className="size-5" />
               Teleradiology network
             </div>
-            <h2 className="mt-4 max-w-3xl text-[32px] font-extrabold leading-tight md:text-[44px]">
+            <h2 className="mt-4 max-w-3xl text-[28px] font-extrabold leading-tight sm:text-[32px] md:text-[44px]">
               Build a dependable remote reporting service around your clinical needs.
             </h2>
           </div>
           <Link
             to="/contact"
-            className="inline-flex shrink-0 items-center justify-center gap-3 bg-[#177fed] px-6 py-4 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63]"
+            className="inline-flex max-w-full shrink-0 items-center justify-center gap-3 bg-[#177fed] px-5 py-4 text-sm font-extrabold uppercase text-white transition-colors hover:bg-[#061a63] sm:px-6"
           >
             Start a conversation <ArrowUpRight className="size-4" />
           </Link>
