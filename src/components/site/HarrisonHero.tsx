@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
+import type { ReactNode } from "react";
 
 export function HarrisonHero({
   eyebrow,
   title,
+  afterTitle,
   subtitle,
   image,
   imageClassName = "object-center",
@@ -11,6 +13,7 @@ export function HarrisonHero({
 }: {
   eyebrow: string;
   title: string;
+  afterTitle?: ReactNode;
   subtitle?: string;
   image: string;
   imageClassName?: string;
@@ -44,6 +47,7 @@ export function HarrisonHero({
           <h1 className="mt-5 text-[34px] font-extrabold leading-[1.12] text-[#061a63] sm:text-[42px] md:text-[68px]">
             {title}
           </h1>
+          {afterTitle && <div className="mt-6">{afterTitle}</div>}
           {subtitle && (
             <p className="mx-auto mt-5 max-w-2xl text-base font-semibold leading-7 text-[#52617f] md:mt-6 md:text-lg md:leading-8">
               {subtitle}

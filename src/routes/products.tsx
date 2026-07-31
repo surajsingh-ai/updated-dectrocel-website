@@ -226,12 +226,50 @@ const upcomingProducts = [
   },
 ];
 
+const modalityCoverage = [
+  "Brain MRI",
+  "Head & neck",
+  "Chest X-ray",
+  "CT thorax",
+  "CT abdomen",
+  "Mammography",
+  "MSK X-ray",
+  "PET-CT",
+  "Ultrasound",
+  "Head-to-toe CT",
+];
+
 function ProductsPage() {
   return (
     <main className="bg-white text-[#061a63]">
       <HarrisonHero
         eyebrow="Products"
         title="Healthcare AI products built for clinical work."
+        afterTitle={
+          <div className="mx-auto max-w-5xl border border-[#c8dff8] bg-[#f5f9ff] p-4 text-left shadow-[0_18px_50px_rgba(23,127,237,0.10)] sm:p-5 md:p-6">
+            <div className="grid gap-3 md:grid-cols-[0.9fr_1.4fr] md:items-center">
+              <div>
+                <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#177fed]">
+                  Head-to-toe modality coverage
+                </p>
+                <p className="mt-2 text-base font-extrabold leading-6 text-[#061a63] sm:text-lg">
+                  One product ecosystem for radiology teams across the full body.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {modalityCoverage.map((modality) => (
+                  <span
+                    key={modality}
+                    className="inline-flex items-center gap-2 border border-[#b8d7f7] bg-white px-3 py-2 text-[11px] font-extrabold uppercase leading-none text-[#061a63] shadow-sm sm:text-xs"
+                  >
+                    <span className="size-1.5 shrink-0 rounded-full bg-[#177fed]" />
+                    {modality}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        }
         subtitle="A connected product suite for imaging teams, diagnostic centers, hospitals, and screening programs."
         image={allModalityHeroImg}
         cta="Book a demo"
