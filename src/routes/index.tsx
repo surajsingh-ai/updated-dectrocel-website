@@ -55,9 +55,9 @@ function Hero() {
   ];
 
   return (
-    <section className="bg-white px-4 pb-14 pt-24 sm:px-6 md:pt-32 lg:px-8">
+    <section className="bg-white px-4 pb-14 pt-20 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
       <div className="mx-auto max-w-[1240px]">
-        <div className="relative h-[340px] overflow-hidden rounded-[5px] bg-slate-200 shadow-sm sm:h-[380px] md:h-[600px]">
+        <div className="relative h-[430px] overflow-hidden rounded-[5px] bg-slate-200 shadow-sm sm:h-[460px] md:h-[600px]">
           <img
             src={heroDoctor}
             alt="Indian doctor beside radiology monitors using healthcare AI"
@@ -67,17 +67,17 @@ function Hero() {
           <div className="absolute left-[5.6%] top-[46%] hidden h-28 w-28 -translate-y-1/2 bg-[#1d7fe8]/20 md:block" />
           <div className="absolute right-[12%] top-[58%] hidden h-20 w-20 bg-[#147eea]/82 md:block" />
           <div className="absolute bottom-[15%] right-0 hidden h-14 w-[20%] bg-[#87b9e7]/34 md:block" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center">
-            <h1 className="max-w-[860px] text-[34px] font-extrabold leading-[1.14] text-white drop-shadow-md sm:text-[40px] md:text-[66px]">
+          <div className="absolute inset-0 flex flex-col items-center justify-end px-5 pb-7 pt-8 text-center sm:justify-center sm:pb-8 md:px-8">
+            <h1 className="max-w-[860px] text-[28px] font-extrabold leading-[1.12] text-white drop-shadow-md min-[390px]:text-[30px] sm:text-[40px] md:text-[66px]">
               Reimagining the future of healthcare with AI
             </h1>
-            <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-white/90 drop-shadow md:mt-5 md:text-lg md:leading-8">
+            <p className="mt-3 max-w-2xl text-[15px] font-semibold leading-6 text-white/90 drop-shadow sm:mt-4 sm:text-base sm:leading-7 md:mt-5 md:text-lg md:leading-8">
               AI support for CT thorax and abdomen, MRI brain, skeletal imaging, mammography,
               PET-CT, X-ray workflows, and clinical decision support.
             </p>
             <Link
               to="/contact"
-              className="mt-6 inline-flex items-center gap-3 bg-white/42 px-4 py-3 text-base font-extrabold text-white backdrop-blur-[2px] transition-colors hover:bg-white/55 md:mt-8 md:px-5 md:text-xl"
+              className="mt-5 inline-flex items-center gap-3 bg-white/42 px-4 py-2.5 text-sm font-extrabold text-white backdrop-blur-[2px] transition-colors hover:bg-white/55 sm:mt-6 sm:py-3 sm:text-base md:mt-8 md:px-5 md:text-xl"
             >
               Get started
               <span className="grid size-8 place-items-center bg-[#1683eb] text-white">
