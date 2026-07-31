@@ -175,7 +175,7 @@ function TeleradiologyServicesPage() {
       <HarrisonHero
         eyebrow="Teleradiology Services"
         title="Teleradiology workflows built for speed, quality, and scale."
-        subtitle="Dectrocel supports teleradiology providers, hospitals, and diagnostic networks with AI-enabled triage, PACS connectivity, and reporting operations."
+        subtitle="Dectrocel provides teleradiology services for providers, hospitals, and diagnostic networks with AI-enabled triage, PACS connectivity, and reporting operations."
         image={pipelineImg}
         imageClassName="object-center"
         cta="Book a demo"

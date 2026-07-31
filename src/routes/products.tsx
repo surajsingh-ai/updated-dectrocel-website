@@ -58,6 +58,9 @@ const products = [
       "Advanced AI platform for automated detection of chest and skeletal conditions with real-time analysis and reporting.",
     image: sxProductImg,
     features: [
+      "Provides MSK analysis",
+      "Special X-ray support",
+      "Chest X-ray reporting",
       "Detects 56+ chest conditions",
       "262 skeletal pathologies",
       "Head-to-toe skeletal analysis",
@@ -75,7 +78,13 @@ const products = [
     description:
       "Desktop application for comprehensive CT scan analysis using advanced AI and machine learning algorithms.",
     image: ctProductImg,
-    features: ["Multi-slice CT analysis", "AI-powered detection", "3D visualization support", "ML-based predictions"],
+    features: [
+      "Provides head-to-toe CT analysis",
+      "Multi-slice CT analysis",
+      "AI-powered detection",
+      "3D visualization support",
+      "ML-based predictions",
+    ],
   },
   {
     icon: ScanLine,
@@ -150,6 +159,22 @@ const products = [
     ],
   },
   {
+    icon: ScanLine,
+    name: "DecXpert AI Mammography",
+    label: "Breast imaging AI",
+    status: "Available now",
+    description:
+      "Mammography interpretation support for breast screening, lesion detection, density review, and structured reporting.",
+    image: mammographyImg,
+    features: [
+      "Breast density assessment",
+      "Mass and lesion detection",
+      "Calcification pattern support",
+      "Screening workflow triage",
+      "Structured breast imaging reports",
+    ],
+  },
+  {
     icon: Smartphone,
     name: "My LGP Health",
     label: "Chronic liver disease assessment",
@@ -171,20 +196,6 @@ const products = [
 
 const upcomingProducts = [
   {
-    name: "DecXpert AI Mammography",
-    label: "Breast imaging AI",
-    description:
-      "Mammography interpretation support for breast screening, lesion detection, density review, and structured reporting.",
-    image: mammographyImg,
-    features: [
-      "Breast density assessment",
-      "Mass and lesion detection",
-      "Calcification pattern support",
-      "Screening workflow triage",
-      "Structured breast imaging reports",
-    ],
-  },
-  {
     name: "DecXpert AI PET CT",
     label: "Integrated PET-CT analysis",
     description:
@@ -196,6 +207,20 @@ const upcomingProducts = [
       "Metabolic activity mapping",
       "Multi-timepoint comparison",
       "Oncology-focused reporting",
+    ],
+  },
+  {
+    name: "DecXpert AI Ultrasound",
+    label: "Ultrasound imaging AI",
+    description:
+      "AI-assisted ultrasound workflow support for faster screening, measurements, and structured clinical reporting.",
+    image: pipeline3d,
+    features: [
+      "Ultrasound study assistance",
+      "Automated measurement support",
+      "Screening workflow triage",
+      "Structured ultrasound reporting",
+      "Clinical review-ready outputs",
     ],
   },
 ];
@@ -274,15 +299,15 @@ function ProductsPage() {
               Upcoming products in the Dectrocel pipeline.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg font-semibold leading-8 text-[#52617f]">
-              The next wave of imaging AI products extends Dectrocel across mammography and
-              PET-CT workflows.
+              The next wave of imaging AI products extends Dectrocel across PET-CT and ultrasound
+              workflows.
             </p>
           </div>
 
           <div className="mt-14 h-[320px] overflow-hidden rounded-[5px] bg-white md:h-[430px]">
             <img
               src={pipeline3d}
-              alt="3D medical AI pipeline with CT, MRI, mammography, and PET-CT panels"
+              alt="3D medical AI pipeline with CT, MRI, PET-CT, and ultrasound panels"
               loading="lazy"
               decoding="async"
               className="size-full object-cover"
