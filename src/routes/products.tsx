@@ -13,6 +13,7 @@ import productHero3d from "@/assets/medical-ai-product-3d.png";
 import chestXrayImg from "@/assets/chest.png";
 import mriScanImg from "@/assets/MRI_scan.png";
 import sxProductImg from "@/assets/SX.png";
+import ultrasoundProductImg from "@/assets/ultrasound-ai-product.png";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 
 export const Route = createFileRoute("/products")({
@@ -214,7 +215,7 @@ const upcomingProducts = [
     label: "Ultrasound imaging AI",
     description:
       "AI-assisted ultrasound workflow support for faster screening, measurements, and structured clinical reporting.",
-    image: pipeline3d,
+    image: ultrasoundProductImg,
     features: [
       "Ultrasound study assistance",
       "Automated measurement support",
