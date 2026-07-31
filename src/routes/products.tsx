@@ -8,8 +8,8 @@ import dashboardImg from "@/assets/hero-dashboard.jpg";
 import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
 import neuralBg from "@/assets/neural-bg.jpg";
+import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
-import productHero3d from "@/assets/medical-ai-product-3d.png";
 import chestXrayImg from "@/assets/chest.png";
 import mriScanImg from "@/assets/MRI_scan.png";
 import sxProductImg from "@/assets/SX.png";
@@ -233,7 +233,7 @@ function ProductsPage() {
         eyebrow="Products"
         title="Healthcare AI products built for clinical work."
         subtitle="A connected product suite for imaging teams, diagnostic centers, hospitals, and screening programs."
-        image={productHero3d}
+        image={allModalityHeroImg}
         cta="Book a demo"
       />
 
