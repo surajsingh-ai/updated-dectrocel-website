@@ -17,31 +17,31 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
       <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between md:h-24">
+        <div className="flex h-20 items-center justify-between gap-4 md:h-24">
           <Link
             to="/"
-            className="max-w-[245px] font-display text-[18px] font-extrabold leading-tight text-[#061a63] sm:max-w-[360px] sm:text-[22px] md:max-w-[430px] md:text-[26px] lg:max-w-[250px] lg:text-[20px] xl:max-w-[360px] xl:text-[24px]"
+            className="max-w-[245px] shrink-0 font-display text-[18px] font-extrabold leading-tight text-[#061a63] sm:max-w-[360px] sm:text-[22px] md:max-w-[430px] md:text-[26px] lg:max-w-[260px] lg:text-[20px] xl:max-w-[340px] xl:text-[23px]"
             aria-label="Dectrocel Healthcare and Research Pvt. Ltd home"
             onClick={() => setOpen(false)}
           >
             Dectrocel Healthcare and Research Pvt. Ltd
           </Link>
-          <nav className="hidden items-center gap-9 lg:flex">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 lg:flex xl:gap-6">
             {links.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
-                className="text-sm font-extrabold uppercase text-[#061a63] transition-colors hover:text-[#177fed]"
+                className="whitespace-nowrap text-[13px] font-extrabold uppercase text-[#061a63] transition-colors hover:text-[#177fed] xl:text-sm"
                 activeProps={{ className: "text-[#177fed]" }}
               >
                 {l.label}
               </Link>
             ))}
           </nav>
-          <div className="flex items-center gap-5">
+          <div className="flex shrink-0 items-center gap-5">
             <Link
               to="/contact"
-              className="hidden items-center gap-2 text-sm font-extrabold text-[#061a63] transition-colors hover:text-[#177fed] md:inline-flex"
+              className="hidden items-center gap-2 whitespace-nowrap bg-white px-1 text-sm font-extrabold text-[#061a63] transition-colors hover:text-[#177fed] md:inline-flex"
             >
               Book a demo
               <span className="grid size-6 place-items-center bg-[#177fed] text-white">
