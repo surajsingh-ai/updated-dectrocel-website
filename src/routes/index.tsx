@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, CheckCircle2, ChevronRight } from "lucide-react";
 
-import aiimsLogo from "@/assets/aiims.png";
 import cdscoLogo from "@/assets/CDSCO.png";
 import chandniHospitalLogo from "@/assets/chandni-hospital.png";
 import chestImg from "@/assets/chest.png";
@@ -220,10 +219,6 @@ function PartnerLogoMarquee() {
     {
       src: govindHospitalLogo,
       label: "Govind Hospital",
-    },
-    {
-      src: aiimsLogo,
-      label: "All India Institute of Medical Sciences",
     },
     {
       src: gsvmMedicalCollegeLogo,

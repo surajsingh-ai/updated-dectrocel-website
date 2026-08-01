@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2, Star } from "lucide-react";
 
-import aiimsLogo from "@/assets/aiims.png";
 import heroDoctor from "@/assets/hero-indian-doctor-radiology.png";
 import kgmuLogo from "@/assets/KGMU.png";
 import ncgLogo from "@/assets/NCG.png";
@@ -81,15 +80,6 @@ const partners = [
       "India's premier comprehensive cancer center",
       "Internationally recognized for excellence in oncology care, research, and education",
       "Pioneering advancements in cancer diagnostics and treatment",
-    ],
-  },
-  {
-    name: "All India Institute of Medical Sciences",
-    logo: aiimsLogo,
-    highlights: [
-      "India's premier public medical institution and research network",
-      "Recognized for excellence in clinical care, education, and innovation",
-      "Advancing evidence-led adoption of healthcare technology",
     ],
   },
 ];
