@@ -27,7 +27,7 @@ export function Header() {
             <span className="block whitespace-nowrap">Dectrocel Healthcare</span>
             <span className="block whitespace-nowrap">and Research Pvt. Ltd</span>
           </Link>
-          <nav className="hidden min-w-0 flex-1 items-center justify-end gap-4 lg:flex xl:gap-5">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 lg:flex xl:gap-5">
             {links.map((l) => (
               <Link
                 key={l.to}
