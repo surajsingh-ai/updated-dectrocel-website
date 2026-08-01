@@ -20,12 +20,16 @@ export function Header() {
         <div className="flex h-20 items-center justify-between gap-4 md:h-24">
           <Link
             to="/"
-            className="max-w-[245px] shrink-0 font-display text-[18px] font-extrabold leading-tight text-[#061a63] sm:max-w-[360px] sm:text-[22px] md:max-w-[430px] md:text-[26px] lg:max-w-[260px] lg:text-[20px] xl:max-w-[340px] xl:text-[23px]"
+            className="max-w-[245px] shrink-0 font-display leading-tight text-[#061a63] sm:max-w-[360px] md:max-w-[430px] lg:max-w-[280px] xl:max-w-[360px]"
             aria-label="Dectrocel Healthcare and Research Pvt. Ltd home"
             onClick={() => setOpen(false)}
           >
-            <span className="block whitespace-nowrap">Dectrocel</span>
-            <span className="block whitespace-nowrap">Healthcare and Research Pvt. Ltd</span>
+            <span className="block whitespace-nowrap text-[30px] font-extrabold sm:text-[38px] md:text-[44px] lg:text-[31px] xl:text-[38px]">
+              Dectrocel
+            </span>
+            <span className="block whitespace-nowrap text-[11px] font-extrabold sm:text-[13px] md:text-[15px] lg:text-[11px] xl:text-[13px]">
+              Healthcare and Research Pvt. Ltd
+            </span>
           </Link>
           <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 lg:flex xl:gap-5">
             {links.map((l) => (
