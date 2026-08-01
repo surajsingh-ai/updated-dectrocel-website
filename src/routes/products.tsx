@@ -227,16 +227,46 @@ const upcomingProducts = [
 ];
 
 const modalityCoverage = [
-  "Brain MRI",
-  "Head & neck",
-  "Chest X-ray",
-  "CT thorax",
-  "CT abdomen",
-  "Mammography",
-  "MSK X-ray",
-  "PET-CT",
-  "Ultrasound",
-  "Head-to-toe CT",
+  {
+    name: "Brain MRI",
+    detail: "Neurology workflows for brain screening, lesion review, and advanced MRI interpretation support.",
+  },
+  {
+    name: "Head & Neck",
+    detail: "AI support for head, neck, sinus, airway, and soft-tissue imaging review workflows.",
+  },
+  {
+    name: "Chest X-Ray",
+    detail: "Fast chest X-ray triage for pulmonary findings, TB programs, and routine radiology reporting.",
+  },
+  {
+    name: "CT Thorax",
+    detail: "Thoracic CT analysis for lung, mediastinum, nodules, and emergency chest imaging workflows.",
+  },
+  {
+    name: "CT Abdomen",
+    detail: "Abdominal CT support for liver, kidney, pancreas, vascular mapping, and multi-organ assessment.",
+  },
+  {
+    name: "Mammography",
+    detail: "Breast imaging support for screening triage, density review, lesion detection, and reporting.",
+  },
+  {
+    name: "MSK X-Ray",
+    detail: "Musculoskeletal and skeletal X-ray support for special X-rays, fractures, and bone pathology review.",
+  },
+  {
+    name: "PET-CT",
+    detail: "Upcoming fusion imaging support for oncology workflows, lesion tracking, and metabolic assessment.",
+  },
+  {
+    name: "Ultrasound",
+    detail: "Upcoming ultrasound assistance for measurements, screening workflows, and structured reporting.",
+  },
+  {
+    name: "Head-to-Toe CT",
+    detail: "Whole-body CT coverage designed for comprehensive trauma, oncology, and multi-region review.",
+  },
 ];
 
 function ProductsPage() {
@@ -256,15 +286,20 @@ function ProductsPage() {
                   One product ecosystem for radiology teams across the full body.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid gap-2 sm:grid-cols-2">
                 {modalityCoverage.map((modality) => (
-                  <span
-                    key={modality}
-                    className="inline-flex items-center gap-2 border border-[#b8d7f7] bg-white px-3 py-2 text-[11px] font-extrabold uppercase leading-none text-[#061a63] shadow-sm sm:text-xs"
+                  <div
+                    key={modality.name}
+                    className="border border-[#b8d7f7] bg-white p-3 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
                   >
-                    <span className="size-1.5 shrink-0 rounded-full bg-[#177fed]" />
-                    {modality}
-                  </span>
+                    <div className="flex items-center gap-2 text-[11px] font-extrabold uppercase leading-none text-[#061a63] sm:text-xs">
+                      <span className="size-1.5 shrink-0 rounded-full bg-[#177fed]" />
+                      {modality.name}
+                    </div>
+                    <p className="mt-2 text-xs font-semibold leading-5 text-[#52617f]">
+                      {modality.detail}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>

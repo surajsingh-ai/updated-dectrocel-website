@@ -91,11 +91,15 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-16 max-w-7xl border-t border-white/14 px-6 py-8">
         <p className="text-xs leading-6 text-white/54">
-          For use by qualified healthcare professionals. Dectrocel is intended to assist, not
-          replace, clinical judgment. Product availability and regulatory status vary by region.
+          For use by qualified healthcare professionals. Dectrocel Healthcare and Research Pvt. Ltd
+          products are intended to assist, not replace, clinical judgment. Product availability and
+          regulatory status vary by region.
         </p>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-white/54">
-          <div>&copy; {new Date().getFullYear()} Dectrocel. All rights reserved.</div>
+          <div>
+            &copy; {new Date().getFullYear()} Dectrocel Healthcare and Research Pvt. Ltd. All
+            rights reserved.
+          </div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-white">
               Privacy

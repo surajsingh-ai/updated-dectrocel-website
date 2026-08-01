@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Dectrocel is building healthcare AI products for radiology and clinical imaging teams.",
+          "Dectrocel Healthcare and Research Pvt. Ltd is building healthcare AI products for radiology and clinical imaging teams.",
       },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -25,9 +25,9 @@ export const Route = createFileRoute("/about")({
 });
 
 const team = [
-  ["SS", "Saumya Shukla", "CEO, Dectrocel"],
-  ["AS", "Dr. Ankit Shukla", "Technical Director, Dectrocel"],
-  ["NM", "Nikhil Mishra", "CTO, Dectrocel"],
+  ["SS", "Saumya Shukla", "CEO, Dectrocel Healthcare and Research Pvt. Ltd"],
+  ["AS", "Dr. Ankit Shukla", "Technical Director, Dectrocel Healthcare and Research Pvt. Ltd"],
+  ["NM", "Nikhil Mishra", "CTO, Dectrocel Healthcare and Research Pvt. Ltd"],
 ];
 
 const principles = [
@@ -103,7 +103,7 @@ function AboutPage() {
       <HarrisonHero
         eyebrow="Company"
         title="Making accurate diagnostics accessible everywhere."
-        subtitle="Dectrocel was founded by clinicians and engineers to bring trustworthy medical AI into every imaging workflow, from leading academic hospitals to rural screening programs."
+        subtitle="Dectrocel Healthcare and Research Pvt. Ltd was founded by clinicians and engineers to bring trustworthy medical AI into every imaging workflow, from leading academic hospitals to rural screening programs."
         image={heroDoctor}
         imageClassName="object-[58%_18%] md:object-[56%_12%]"
       />
@@ -183,7 +183,7 @@ function AboutPage() {
             <p className="mt-6 text-base font-medium leading-8 text-white/70">
               The Office of the Chief Medical Officer, Bilaspur, District Bilaspur (HP)
               certified that DecXpert AI Software, developed by Dectrocel Healthcare and Research
-              Pvt. Ltd., has been successfully implemented and is currently operational.
+              Pvt. Ltd, has been successfully implemented and is currently operational.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
               <div className="bg-white/8 p-5">
