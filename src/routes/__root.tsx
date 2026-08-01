@@ -15,9 +15,9 @@ import socialImage from "../assets/hero-dashboard.jpg";
 import { reportClientError } from "../lib/error-reporting";
 import appCss from "../styles.css?url";
 
-const siteTitle = "Dectrocel - Complete AI Radiology Platform";
+const siteTitle = "Dectrocel Healthcare and Research Pvt. Ltd - Complete AI Radiology Platform";
 const siteDescription =
-  "Dectrocel is a complete AI radiology platform for faster, more accurate disease detection.";
+  "Dectrocel Healthcare and Research Pvt. Ltd is a complete AI radiology platform for faster, more accurate disease detection.";
 
 function NotFoundComponent() {
   return (
@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: siteTitle },
       { name: "description", content: siteDescription },
-      { name: "author", content: "Dectrocel" },
+      { name: "author", content: "Dectrocel Healthcare and Research Pvt. Ltd" },
       { property: "og:title", content: siteTitle },
       { property: "og:description", content: siteDescription },
       { property: "og:type", content: "website" },

@@ -27,13 +27,13 @@ import yashodaLogo from "@/assets/yashoda.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dectrocel - Healthcare AI" },
+      { title: "Dectrocel Healthcare and Research Pvt. Ltd - Healthcare AI" },
       {
         name: "description",
         content:
-          "Dectrocel builds AI-powered radiology products for healthcare providers and clinical networks.",
+          "Dectrocel Healthcare and Research Pvt. Ltd builds AI-powered radiology products for healthcare providers and clinical networks.",
       },
-      { property: "og:title", content: "Dectrocel - Healthcare AI" },
+      { property: "og:title", content: "Dectrocel Healthcare and Research Pvt. Ltd - Healthcare AI" },
       {
         property: "og:description",
         content: "Reimagining the future of healthcare with AI.",
@@ -346,7 +346,9 @@ function Mission() {
     <section className="bg-[#f5f9ff] px-6 py-20 lg:px-8">
       <div className="mx-auto grid max-w-[1240px] gap-12 md:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="text-sm font-extrabold uppercase text-[#197fe5]">Dectrocel</p>
+          <p className="text-sm font-extrabold uppercase text-[#197fe5]">
+            Dectrocel Healthcare and Research Pvt. Ltd
+          </p>
           <h2 className="mt-4 text-[40px] font-extrabold leading-tight text-[#061a63] md:text-[54px]">
             Clinical AI for better, faster imaging decisions.
           </h2>

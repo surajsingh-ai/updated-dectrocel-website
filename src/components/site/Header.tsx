@@ -20,11 +20,11 @@ export function Header() {
         <div className="flex h-20 items-center justify-between md:h-24">
           <Link
             to="/"
-            className="font-display text-[29px] font-extrabold leading-none text-[#061a63] sm:text-[34px] md:text-[42px]"
-            aria-label="Dectrocel home"
+            className="max-w-[245px] font-display text-[18px] font-extrabold leading-tight text-[#061a63] sm:max-w-[360px] sm:text-[22px] md:max-w-[430px] md:text-[26px] lg:max-w-[250px] lg:text-[20px] xl:max-w-[360px] xl:text-[24px]"
+            aria-label="Dectrocel Healthcare and Research Pvt. Ltd home"
             onClick={() => setOpen(false)}
           >
-            Dectrocel
+            Dectrocel Healthcare and Research Pvt. Ltd
           </Link>
           <nav className="hidden items-center gap-9 lg:flex">
             {links.map((l) => (

@@ -52,10 +52,10 @@ export function Footer() {
         <div className="col-span-2 md:col-span-2">
           <Link
             to="/"
-            className="font-display text-4xl font-extrabold leading-none text-white"
-            aria-label="Dectrocel home"
+            className="font-display text-2xl font-extrabold leading-tight text-white md:text-3xl"
+            aria-label="Dectrocel Healthcare and Research Pvt. Ltd home"
           >
-            Dectrocel
+            Dectrocel Healthcare and Research Pvt. Ltd
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-7 text-white/66">
             AI imaging products for radiology teams, hospitals, screening programs, and care
