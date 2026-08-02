@@ -272,11 +272,11 @@ function ProductsPage() {
                   One product ecosystem for radiology teams across the full body.
                 </p>
               </div>
-              <div className="grid gap-2 [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))]">
+              <div className="flex flex-wrap items-start gap-2">
                 {modalityCoverage.map((modality) => (
                   <div
                     key={modality}
-                    className="border border-[#b8d7f7] bg-white px-3 py-2.5 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
+                    className="min-w-[190px] max-w-[260px] flex-1 border border-[#b8d7f7] bg-white px-3 py-2.5 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
                   >
                     <div className="flex items-start gap-2 text-[11px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-xs">
                       <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
