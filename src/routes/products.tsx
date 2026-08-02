@@ -228,7 +228,8 @@ const upcomingProducts = [
 
 const modalityCoverage = [
   "MRI Brain",
-  "MRI Brain w/ Contrast · Epilepsy",
+  "MRI Brain w/ Contrast",
+  "MRI Epilepsy",
   "MRI Spine",
   "MRI Body - Head-Neck, Upper/Lower Abd, Pelvis",
   "MRCP",
