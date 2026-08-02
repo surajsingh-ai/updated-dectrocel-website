@@ -260,10 +260,6 @@ const modalityCoverage = [
   "X-Ray Special Views",
   "Mammography Breast",
   "PET-CT Oncology",
-  "Ultrasound Abdomen",
-  "Ultrasound Obstetric",
-  "Ultrasound Breast",
-  "Ultrasound Vascular Doppler",
 ];
 
 function ProductsPage() {
