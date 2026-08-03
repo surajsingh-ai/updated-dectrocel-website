@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2, Star } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 import heroDoctor from "@/assets/hero-indian-doctor-radiology.png";
 import kgmuLogo from "@/assets/KGMU.png";
@@ -89,12 +89,6 @@ const certificateHighlights = [
   "Routinely used for AI-assisted chest X-ray analysis supporting detection and assessment of 19 pulmonary conditions.",
   "Integrated into the diagnostic workflow with reported ease of use, processing efficiency, image interpretation, and report generation.",
   "Recognized as an effective clinical decision-support tool for active TB and potential latent TB identification.",
-];
-
-const testimonials = [
-  "Dectrocel cut our turnaround time in half while raising confidence in chest X-ray reads.",
-  "Seamless PACS integration and the most accurate nodule detection we've evaluated.",
-  "Scaling teleradiology across regions became viable thanks to Dectrocel's AI triage.",
 ];
 
 function AboutPage() {
@@ -206,26 +200,6 @@ function AboutPage() {
             <p className="text-sm font-medium leading-6 text-white/58">
               Certificate reference: HFW-BLP/NTEP (DTC) 2025-7850.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-[1240px]">
-          <h2 className="text-4xl font-extrabold leading-tight md:text-6xl">
-            Trusted by clinicians and operators.
-          </h2>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {testimonials.map((quote) => (
-              <article key={quote} className="bg-[#f5f9ff] p-7">
-                <div className="flex gap-1 text-[#177fed]">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <Star key={index} className="size-4 fill-current" />
-                  ))}
-                </div>
-                <p className="mt-5 text-base font-bold leading-7 text-[#061a63]">"{quote}"</p>
-              </article>
-            ))}
           </div>
         </div>
       </section>
