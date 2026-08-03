@@ -167,8 +167,8 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#061a63] px-6 py-20 text-white lg:px-8">
-        <div className="mx-auto grid max-w-[1240px] gap-10 md:grid-cols-2 md:items-center">
+      <section className="bg-white px-6 py-20 lg:px-8">
+        <div className="mx-auto grid max-w-[1240px] gap-10 bg-[#061a63] p-7 text-white shadow-[0_24px_70px_rgba(6,26,99,0.18)] sm:p-9 md:grid-cols-2 md:items-center md:p-12">
           <div>
             <p className="text-sm font-extrabold uppercase text-[#72b7ff]">Implementation Certificate</p>
             <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
