@@ -67,16 +67,26 @@ function EvidencePage() {
       />
 
       <section className="px-6 pb-24 lg:px-8">
-        <div className="mx-auto grid max-w-[1240px] gap-px overflow-hidden bg-slate-200 md:grid-cols-2">
+        <div className="mx-auto grid max-w-[1240px] gap-5 md:grid-cols-2">
           {evidence.map((item) => {
             const content = (
-              <article className="min-h-[320px] bg-[#f5f9ff] p-8 md:p-10">
-                <item.icon className="size-9 text-[#177fed]" />
-                <div className="mt-10 text-xs font-extrabold uppercase text-[#177fed]">{item.label}</div>
-                <h2 className="mt-3 text-3xl font-extrabold">{item.title}</h2>
-                <p className="mt-5 text-lg font-medium leading-8 text-[#52617f]">{item.text}</p>
+              <article className="group h-full border border-[#c8dff8] bg-[#f7fbff] p-6 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(23,127,237,0.12)] sm:p-7 md:p-8">
+                <div className="flex items-start gap-4">
+                  <span className="grid size-12 shrink-0 place-items-center bg-white text-[#177fed] shadow-sm ring-1 ring-[#c8dff8] transition-colors duration-200 group-hover:bg-[#177fed] group-hover:text-white">
+                    <item.icon className="size-6" />
+                  </span>
+                  <div className="min-w-0">
+                    <div className="text-[11px] font-extrabold uppercase tracking-[0.12em] text-[#177fed]">
+                      {item.label}
+                    </div>
+                    <h2 className="mt-2 text-2xl font-extrabold leading-tight text-[#061a63] sm:text-3xl">
+                      {item.title}
+                    </h2>
+                  </div>
+                </div>
+                <p className="mt-6 max-w-[56ch] text-base font-medium leading-7 text-[#52617f]">{item.text}</p>
                 {item.href && (
-                  <span className="mt-8 inline-flex items-center gap-2 text-sm font-extrabold uppercase text-[#061a63]">
+                  <span className="mt-7 inline-flex items-center gap-2 text-sm font-extrabold uppercase text-[#061a63] transition-colors duration-200 group-hover:text-[#177fed]">
                     Read publication <ArrowUpRight className="size-4" />
                   </span>
                 )}
