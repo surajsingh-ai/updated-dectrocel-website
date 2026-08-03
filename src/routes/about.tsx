@@ -168,36 +168,36 @@ function AboutPage() {
       </section>
 
       <section className="bg-white px-6 py-20 lg:px-8">
-        <div className="mx-auto grid max-w-[1240px] gap-10 bg-[#061a63] p-7 text-white shadow-[0_24px_70px_rgba(6,26,99,0.18)] sm:p-9 md:grid-cols-2 md:items-center md:p-12">
+        <div className="mx-auto grid max-w-[1240px] gap-10 border border-[#c8dff8] bg-[#f5f9ff] p-7 text-[#061a63] shadow-[0_22px_60px_rgba(23,127,237,0.10)] sm:p-9 md:grid-cols-2 md:items-center md:p-12">
           <div>
-            <p className="text-sm font-extrabold uppercase text-[#72b7ff]">Implementation Certificate</p>
+            <p className="text-sm font-extrabold uppercase text-[#177fed]">Implementation Certificate</p>
             <h2 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
               Certified successful implementation in public health workflow.
             </h2>
-            <p className="mt-6 text-base font-medium leading-8 text-white/70">
+            <p className="mt-6 text-base font-medium leading-8 text-[#52617f]">
               The Office of the Chief Medical Officer, Bilaspur, District Bilaspur (HP)
               certified that DecXpert AI Software, developed by Dectrocel Healthcare and Research
               Pvt. Ltd, has been successfully implemented and is currently operational.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
-              <div className="bg-white/8 p-5">
-                <div className="text-xs font-extrabold uppercase text-[#72b7ff]">Issued by</div>
+              <div className="border border-[#c8dff8] bg-white p-5 shadow-sm">
+                <div className="text-xs font-extrabold uppercase text-[#177fed]">Issued by</div>
                 <div className="mt-2 font-bold">Chief Medical Officer, Bilaspur</div>
               </div>
-              <div className="bg-white/8 p-5">
-                <div className="text-xs font-extrabold uppercase text-[#72b7ff]">Date</div>
+              <div className="border border-[#c8dff8] bg-white p-5 shadow-sm">
+                <div className="text-xs font-extrabold uppercase text-[#177fed]">Date</div>
                 <div className="mt-2 font-bold">24 Apr 2026</div>
               </div>
             </div>
           </div>
           <div className="grid gap-4">
             {certificateHighlights.map((item) => (
-              <div key={item} className="flex gap-4 bg-white/8 p-5 font-medium leading-7">
+              <div key={item} className="flex gap-4 border border-[#c8dff8] bg-white p-5 font-medium leading-7 text-[#52617f] shadow-sm">
                 <CheckCircle2 className="mt-1 size-5 shrink-0 text-[#177fed]" />
                 <span>{item}</span>
               </div>
             ))}
-            <p className="text-sm font-medium leading-6 text-white/58">
+            <p className="text-sm font-medium leading-6 text-[#52617f]">
               Certificate reference: HFW-BLP/NTEP (DTC) 2025-7850.
             </p>
           </div>
