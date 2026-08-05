@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileText, GraduationCap, Newspaper, Video } from "lucide-react";
+import heroDashboard from "@/assets/hero-dashboard.jpg";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 
 export const Route = createFileRoute("/resources")({
@@ -47,6 +48,8 @@ function ResourcesPage() {
         eyebrow="Resources"
         title="Guidance for healthcare AI teams."
         subtitle="Practical research, customer stories, and clinical playbooks for radiologists, administrators, and IT leaders deploying medical imaging AI."
+        image={heroDashboard}
+        imageClassName="object-center"
       />
 
       <section className="bg-[#f5f9ff] px-6 py-20 lg:px-8">

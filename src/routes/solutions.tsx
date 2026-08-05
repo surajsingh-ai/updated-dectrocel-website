@@ -12,6 +12,7 @@ import {
   Workflow,
 } from "lucide-react";
 
+import heroDashboard from "@/assets/hero-dashboard.jpg";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 
 export const Route = createFileRoute("/solutions")({
@@ -86,6 +87,8 @@ function SolutionsPage() {
         eyebrow="Solutions"
         title="AI for every healthcare setting."
         subtitle="Whether you operate a single clinic or a national screening program, Dectrocel deploys into your workflow."
+        image={heroDashboard}
+        imageClassName="object-center"
         cta="Get started"
       />
 
