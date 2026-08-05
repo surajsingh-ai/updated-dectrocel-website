@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2 } from "lucide-react";
 
-import heroDoctor from "@/assets/hero-indian-doctor-radiology.png";
 import kgmuLogo from "@/assets/KGMU.png";
 import ncgLogo from "@/assets/NCG.png";
 import sgpgiLogo from "@/assets/SGPGI.png";
@@ -98,8 +97,6 @@ function AboutPage() {
         eyebrow="Company"
         title="Making accurate diagnostics accessible everywhere."
         subtitle="Dectrocel Healthcare and Research Pvt. Ltd was founded by clinicians and engineers to bring trustworthy medical AI into every imaging workflow, from leading academic hospitals to rural screening programs."
-        image={heroDoctor}
-        imageClassName="object-[58%_18%] md:object-[56%_12%]"
       />
 
       <section className="px-6 pb-20 lg:px-8">

@@ -8,13 +8,13 @@ import ctAbdomenImg from "@/assets/CT_abdomen.png";
 import fortuneHealthcareLogo from "@/assets/fortune-healthcare.png";
 import govindHospitalLogo from "@/assets/govind-hospital.png";
 import gsvmMedicalCollegeLogo from "@/assets/gsvm-medical-college.png";
-import heroDoctor from "@/assets/hero-indian-doctor-radiology.png";
 import hipaaLogo from "@/assets/HIPAA.png";
 import kgmuLogo from "@/assets/KGMU.png";
 import kmcLogo from "@/assets/kmc.png";
 import madhurajHospitalLogo from "@/assets/madhuraj-hospital.png";
 import mammographyImg from "@/assets/memmography.png";
 import mriScanImg from "@/assets/MRI_scan.png";
+import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pgimerLogo from "@/assets/pgimer.png";
 import ramaMedicalLogo from "@/assets/rama-medical.png";
 import regencyHospitalLogo from "@/assets/regency-hospital.png";
@@ -58,9 +58,9 @@ function Hero() {
       <div className="mx-auto max-w-[1240px]">
         <div className="relative h-[430px] overflow-hidden rounded-[5px] bg-slate-200 shadow-sm sm:h-[460px] md:h-[600px]">
           <img
-            src={heroDoctor}
-            alt="Indian doctor beside radiology monitors using healthcare AI"
-            className="size-full object-cover object-[58%_18%] md:object-[56%_12%]"
+            src={allModalityHeroImg}
+            alt="Radiology modality coverage across CT, MRI, X-ray, mammography, PET-CT, and ultrasound"
+            className="size-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-slate-900/34" />
           <div className="absolute left-[5.6%] top-[46%] hidden h-28 w-28 -translate-y-1/2 bg-[#1d7fe8]/20 md:block" />
