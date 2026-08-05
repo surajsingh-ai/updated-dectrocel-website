@@ -4,11 +4,11 @@ import { ArrowUpRight, CheckCircle2, Cpu, Network, ScanLine, Smartphone } from "
 import ctProductImg from "@/assets/CT.png";
 import ctAbdomenImg from "@/assets/CT_abdomen.png";
 import ctPetImg from "@/assets/CT_pet.png";
-import dashboardImg from "@/assets/hero-dashboard.jpg";
 import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
 import neuralBg from "@/assets/neural-bg.jpg";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
+import pacsImg from "@/assets/pacs.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
 import chestXrayImg from "@/assets/chest.png";
 import mriScanImg from "@/assets/MRI_scan.png";
@@ -129,7 +129,7 @@ const products = [
     status: "Integration service",
     description:
       "Seamlessly integrate DecXpert AI into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
-    image: dashboardImg,
+    image: pacsImg,
     features: [
       "PACS integration",
       "RIS/HIS connectivity",
