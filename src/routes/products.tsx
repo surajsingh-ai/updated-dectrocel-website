@@ -8,7 +8,7 @@ import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
 import neuralBg from "@/assets/neural-bg.jpg";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
-import pacsImg from "@/assets/pacs.png";
+import pacsImg from "@/assets/pacs1.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
 import chestXrayImg from "@/assets/chest.png";
 import mriScanImg from "@/assets/MRI_scan.png";
@@ -130,7 +130,7 @@ const products = [
     description:
       "Seamlessly integrate DecXpert AI into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
     image: pacsImg,
-    imageClassName: "object-contain p-6 md:p-8",
+    imageClassName: "object-cover object-center",
     features: [
       "PACS integration",
       "RIS/HIS connectivity",
