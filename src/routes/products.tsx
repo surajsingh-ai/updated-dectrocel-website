@@ -130,6 +130,7 @@ const products = [
     description:
       "Seamlessly integrate DecXpert AI into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
     image: pacsImg,
+    imageClassName: "object-contain p-6 md:p-8",
     features: [
       "PACS integration",
       "RIS/HIS connectivity",
@@ -307,7 +308,7 @@ function ProductsPage() {
                   src={product.image}
                   alt=""
                   aria-hidden
-                  className="size-full object-cover opacity-92"
+                  className={`size-full opacity-92 ${product.imageClassName ?? "object-cover"}`}
                 />
               </div>
               <div className="flex min-h-[330px] flex-col justify-between p-8 md:min-h-[390px] md:p-12">
