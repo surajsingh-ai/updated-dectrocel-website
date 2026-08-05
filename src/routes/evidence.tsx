@@ -63,7 +63,7 @@ function EvidencePage() {
         title="Built on clinical evidence and regulatory standards."
         subtitle="DecXpert AI solutions are developed with a strong focus on scientific research, regulatory compliance, data privacy, and clinical validation."
         image={evidenceHero}
-        imageClassName="object-center"
+        imageClassName="object-[72%_center]"
       />
 
       <section className="px-6 pb-24 lg:px-8">
