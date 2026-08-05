@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileText, GraduationCap, Newspaper, Video } from "lucide-react";
-import resourcesHero from "@/assets/medical-ai-pipeline-3d.png";
+import resourcesHero from "@/assets/resources-hero-generated.png";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 
 export const Route = createFileRoute("/resources")({
