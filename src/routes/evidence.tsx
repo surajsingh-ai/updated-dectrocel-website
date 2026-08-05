@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, BookOpenCheck, Building2, CheckCircle2, GraduationCap, ShieldCheck } from "lucide-react";
-import evidenceHero from "@/assets/medical-ai-hero-3d.png";
+import evidenceHero from "@/assets/evidence-hero-generated.png";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 
 const publicationUrl = "https://www.nature.com/articles/s41598-024-71346-x";
@@ -63,7 +63,7 @@ function EvidencePage() {
         title="Built on clinical evidence and regulatory standards."
         subtitle="DecXpert AI solutions are developed with a strong focus on scientific research, regulatory compliance, data privacy, and clinical validation."
         image={evidenceHero}
-        imageClassName="object-[72%_center]"
+        imageClassName="object-center"
       />
 
       <section className="px-6 pb-24 lg:px-8">
