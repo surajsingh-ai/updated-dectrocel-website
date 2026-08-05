@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, CheckCircle2, ChevronRight } from "lucide-react";
+import { ArrowUpRight, ChevronRight } from "lucide-react";
 
 import cdscoLogo from "@/assets/CDSCO.png";
 import chandniHospitalLogo from "@/assets/chandni-hospital.png";
@@ -335,37 +335,6 @@ function PartnerNameDirectory() {
   );
 }
 
-function Mission() {
-  const items = [
-    "AI products for radiology teams and clinical networks.",
-    "Fast deployment into hospital, diagnostic, and screening workflows.",
-    "Secure, auditable systems built for healthcare environments.",
-  ];
-
-  return (
-    <section className="bg-[#f5f9ff] px-6 py-20 lg:px-8">
-      <div className="mx-auto grid max-w-[1240px] gap-12 md:grid-cols-[0.9fr_1.1fr]">
-        <div>
-          <p className="text-sm font-extrabold uppercase text-[#197fe5]">
-            Dectrocel Healthcare and Research Pvt. Ltd
-          </p>
-          <h2 className="mt-4 text-[40px] font-extrabold leading-tight text-[#061a63] md:text-[54px]">
-            Clinical AI for better, faster imaging decisions.
-          </h2>
-        </div>
-        <div className="grid content-center gap-5">
-          {items.map((item) => (
-            <div key={item} className="flex items-start gap-4 bg-white p-5 text-lg font-bold text-[#061a63]">
-              <CheckCircle2 className="mt-1 size-6 shrink-0 text-[#197fe5]" />
-              <span>{item}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function ProductTiles() {
   const tiles = [
     ["Radiology AI", "Support CT, MRI, X-ray, mammography, and PET-CT workflows."],
@@ -409,7 +378,6 @@ function Landing() {
       <LogoStrip />
       <PartnerLogoMarquee />
       <PartnerNameDirectory />
-      <Mission />
       <ProductTiles />
     </main>
   );
