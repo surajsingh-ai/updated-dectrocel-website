@@ -3,7 +3,7 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 
-import heroDashboard from "@/assets/hero-dashboard.jpg";
+import contactHero from "@/assets/medical-ai-product-3d.png";
 import { HarrisonHero } from "@/components/site/HarrisonHero";
 import { submitContactMessage } from "@/lib/api/contact.functions";
 
@@ -58,7 +58,7 @@ function ContactPage() {
         eyebrow="Contact"
         title="Bring healthcare AI to your team."
         subtitle="Tell us about your organization and we'll help map the right Dectrocel workflow."
-        image={heroDashboard}
+        image={contactHero}
         imageClassName="object-center"
         cta="Book a demo"
       />

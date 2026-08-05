@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2 } from "lucide-react";
 
-import heroDashboard from "@/assets/hero-dashboard.jpg";
+import companyHero from "@/assets/all-modality-products-hero.png";
 import kgmuLogo from "@/assets/KGMU.png";
 import ncgLogo from "@/assets/NCG.png";
 import sgpgiLogo from "@/assets/SGPGI.png";
@@ -98,7 +98,7 @@ function AboutPage() {
         eyebrow="Company"
         title="Making accurate diagnostics accessible everywhere."
         subtitle="Dectrocel Healthcare and Research Pvt. Ltd was founded by clinicians and engineers to bring trustworthy medical AI into every imaging workflow, from leading academic hospitals to rural screening programs."
-        image={heroDashboard}
+        image={companyHero}
         imageClassName="object-center"
       />
 
