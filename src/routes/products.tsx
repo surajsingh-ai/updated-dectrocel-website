@@ -264,28 +264,26 @@ function ProductsPage() {
         title="Healthcare AI products built for clinical work."
         afterTitle={
           <div className="mx-auto max-w-5xl border border-[#c8dff8] bg-[#f5f9ff] p-4 text-left shadow-[0_18px_50px_rgba(23,127,237,0.10)] sm:p-5 md:p-6">
-            <div className="grid gap-3 md:grid-cols-[0.9fr_1.4fr] md:items-center">
-              <div>
-                <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#177fed]">
-                  Head-to-toe modality coverage
-                </p>
-                <p className="mt-2 text-base font-extrabold leading-6 text-[#061a63] sm:text-lg">
-                  One product ecosystem for radiology teams across the full body.
-                </p>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                {modalityCoverage.map((modality) => (
-                  <div
-                    key={modality}
-                    className="min-w-[190px] max-w-[260px] flex-1 border border-[#b8d7f7] bg-white px-3 py-2.5 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
-                  >
-                    <div className="flex items-start gap-2 text-[11px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-xs">
-                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
-                      <span className="min-w-0 break-words">{modality}</span>
-                    </div>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {modalityCoverage.map((modality) => (
+                <div
+                  key={modality}
+                  className="border border-[#b8d7f7] bg-white px-3 py-2.5 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
+                >
+                  <div className="flex items-start gap-2 text-[11px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-xs">
+                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
+                    <span className="min-w-0 break-words">{modality}</span>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 border-t border-[#c8dff8] pt-5 text-center">
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#177fed]">
+                Head-to-toe modality coverage
+              </p>
+              <p className="mx-auto mt-2 max-w-2xl text-base font-extrabold leading-6 text-[#061a63] sm:text-lg">
+                One product ecosystem for radiology teams across the full body.
+              </p>
             </div>
           </div>
         }
