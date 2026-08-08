@@ -125,39 +125,6 @@ const workflowSupport = [
   "Secure report handoff for hospitals and diagnostic centers",
 ];
 
-const aiAssistedBlocks = [
-  {
-    icon: Bot,
-    title: "AI-Powered Analysis",
-    description:
-      "Our AI analyzes CT, MRI, and X-ray images and generates an initial report within minutes, helping reduce reporting time.",
-  },
-  {
-    icon: UserRoundCheck,
-    title: "Expert Radiologist Review",
-    description:
-      "The AI-generated report is securely sent to an experienced radiologist for a detailed clinical review and verification.",
-  },
-  {
-    icon: FileCheck2,
-    title: "Clinical Validation",
-    description:
-      "The radiologist reviews every finding, applies necessary corrections, and adds important clinical observations to ensure accuracy.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Quality Assurance",
-    description:
-      "Each report goes through a final quality check to maintain high clinical standards and consistency.",
-  },
-  {
-    icon: Send,
-    title: "Secure Report Delivery",
-    description:
-      "The final approved report is securely delivered to hospitals, diagnostic centers, and healthcare providers.",
-  },
-];
-
 const whyChoosePoints = [
   "AI-assisted faster reporting",
   "Expert radiologist validation",
@@ -202,25 +169,6 @@ function TeleradiologyServicesPage() {
               while experienced radiologists carefully review, validate, and approve every report
               before it is delivered to the client.
             </p>
-          </div>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-            {aiAssistedBlocks.map((block) => (
-              <article
-                key={block.title}
-                className="border border-[#c8dff8] bg-white p-6 shadow-[0_18px_48px_rgba(6,26,99,0.08)] transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.13)]"
-              >
-                <div className="grid size-12 place-items-center bg-[#177fed] text-white">
-                  <block.icon className="size-6" />
-                </div>
-                <h3 className="mt-6 text-xl font-extrabold leading-snug text-[#061a63]">
-                  {block.title}
-                </h3>
-                <p className="mt-3 text-sm font-medium leading-7 text-[#52617f]">
-                  {block.description}
-                </p>
-              </article>
-            ))}
           </div>
 
           <div className="mt-12">
