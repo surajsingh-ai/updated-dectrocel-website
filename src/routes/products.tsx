@@ -253,15 +253,13 @@ function ProductsPage() {
       />
 
       <section className="px-6 pb-24 lg:px-8">
-        <div className="mx-auto grid max-w-[1240px] gap-6">
-          {products.map((product, index) => (
+        <div className="mx-auto grid max-w-[1240px] gap-6 lg:grid-cols-2">
+          {products.map((product) => (
             <article
               key={product.name}
-              className={`grid overflow-hidden border border-slate-200 bg-white md:grid-cols-2 ${
-                index % 2 ? "md:[&>*:first-child]:order-2" : ""
-              }`}
+              className="flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row"
             >
-              <div className="min-h-[330px] overflow-hidden bg-[#eef5ff] md:min-h-[390px]">
+              <div className="h-52 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto sm:basis-[42%]">
                 <img
                   src={product.image}
                   alt=""
@@ -269,27 +267,27 @@ function ProductsPage() {
                   className={`size-full opacity-92 ${product.imageClassName ?? "object-cover"}`}
                 />
               </div>
-              <div className="flex min-h-[330px] flex-col justify-between p-8 md:min-h-[390px] md:p-12">
+              <div className="flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7">
                 <div>
-                  <div className="flex items-center gap-3">
-                    <span className="grid size-11 place-items-center bg-[#177fed] text-white">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="grid size-10 place-items-center bg-[#177fed] text-white">
                       <product.icon className="size-5" />
                     </span>
-                    <span className="text-xs font-extrabold uppercase text-[#177fed]">
+                    <span className="min-w-0 flex-1 text-[11px] font-extrabold uppercase leading-snug text-[#177fed]">
                       {product.label}
                     </span>
-                    <span className="ml-auto bg-[#e9f3ff] px-3 py-1.5 text-xs font-extrabold uppercase text-[#061a63]">
+                    <span className="bg-[#e9f3ff] px-3 py-1.5 text-[11px] font-extrabold uppercase text-[#061a63]">
                       {product.status}
                     </span>
                   </div>
-                  <h2 className="mt-8 text-4xl font-extrabold leading-tight">{product.name}</h2>
-                  <p className="mt-5 text-lg font-medium leading-8 text-[#52617f]">
+                  <h2 className="mt-6 text-2xl font-extrabold leading-tight md:text-3xl">{product.name}</h2>
+                  <p className="mt-4 text-sm font-medium leading-6 text-[#52617f] md:text-base md:leading-7">
                     {product.description}
                   </p>
-                  <div className="mt-7 grid gap-3">
+                  <div className="mt-5 grid gap-2">
                     {product.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-3 text-sm font-bold">
-                        <CheckCircle2 className="size-5 text-[#177fed]" />
+                      <div key={feature} className="flex items-start gap-2.5 text-xs font-bold leading-5 md:text-sm">
+                        <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
                         {feature}
                       </div>
                     ))}
@@ -297,7 +295,7 @@ function ProductsPage() {
                 </div>
                 <Link
                   to="/contact"
-                  className="mt-8 inline-flex w-fit items-center gap-2 bg-[#061a63] px-5 py-3 text-sm font-extrabold text-white hover:bg-[#177fed]"
+                  className="mt-6 inline-flex w-fit items-center gap-2 bg-[#061a63] px-4 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed] md:text-sm"
                 >
                   Book a demo <ArrowUpRight className="size-4" />
                 </Link>
@@ -330,15 +328,13 @@ function ProductsPage() {
             />
           </div>
 
-          <div className="mt-14 grid gap-6">
-            {upcomingProducts.map((product, index) => (
+          <div className="mt-14 grid gap-6 lg:grid-cols-2">
+            {upcomingProducts.map((product) => (
               <article
                 key={product.name}
-                className={`grid overflow-hidden border border-slate-200 bg-white md:grid-cols-2 ${
-                  index % 2 ? "md:[&>*:first-child]:order-2" : ""
-                }`}
+                className="flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row"
               >
-                <div className="relative min-h-[330px] overflow-hidden bg-[#ddecff] md:min-h-[390px]">
+                <div className="relative h-52 shrink-0 overflow-hidden bg-[#ddecff] sm:h-auto sm:basis-[42%]">
                   <img
                     src={product.image}
                     alt=""
@@ -347,31 +343,31 @@ function ProductsPage() {
                     decoding="async"
                     className="size-full object-cover opacity-92"
                   />
-                  <div className="absolute bottom-6 right-6 h-16 w-16 bg-[#177fed]/80" />
+                  <div className="absolute bottom-5 right-5 h-12 w-12 bg-[#177fed]/80" />
                 </div>
-                <div className="flex min-h-[330px] flex-col justify-between p-8 md:min-h-[390px] md:p-12">
+                <div className="flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7">
                   <div>
-                    <div className="flex items-center gap-3">
-                      <span className="grid size-11 place-items-center bg-[#177fed] text-white">
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="grid size-10 place-items-center bg-[#177fed] text-white">
                         <ScanLine className="size-5" />
                       </span>
-                      <span className="text-xs font-extrabold uppercase text-[#177fed]">
+                      <span className="min-w-0 flex-1 text-[11px] font-extrabold uppercase leading-snug text-[#177fed]">
                         {product.label}
                       </span>
-                      <span className="ml-auto bg-[#177fed] px-3 py-1.5 text-xs font-extrabold uppercase text-white">
+                      <span className="bg-[#177fed] px-3 py-1.5 text-[11px] font-extrabold uppercase text-white">
                         Upcoming
                       </span>
                     </div>
-                    <h3 className="mt-8 text-4xl font-extrabold leading-tight text-[#061a63]">
+                    <h3 className="mt-6 text-2xl font-extrabold leading-tight text-[#061a63] md:text-3xl">
                       {product.name}
                     </h3>
-                    <p className="mt-5 text-lg font-medium leading-8 text-[#52617f]">
+                    <p className="mt-4 text-sm font-medium leading-6 text-[#52617f] md:text-base md:leading-7">
                       {product.description}
                     </p>
-                    <div className="mt-7 grid gap-3">
+                    <div className="mt-5 grid gap-2">
                       {product.features.map((feature) => (
-                        <div key={feature} className="flex items-center gap-3 text-sm font-bold">
-                          <CheckCircle2 className="size-5 text-[#177fed]" />
+                        <div key={feature} className="flex items-start gap-2.5 text-xs font-bold leading-5 md:text-sm">
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
                           {feature}
                         </div>
                       ))}
