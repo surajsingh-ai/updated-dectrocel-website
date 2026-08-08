@@ -8,7 +8,7 @@ import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
-import mxProductImg from "@/assets/decxpert-mx-workstation.png";
+import mxProductImg from "@/assets/decxpert-mx-scan-grid.png";
 import mriScanImg from "@/assets/MRI_scan.png";
 import sxProductImg from "@/assets/SX.png";
 import ultrasoundProductImg from "@/assets/ultrasound-ai-product.png";
