@@ -275,12 +275,12 @@ function ProductsPage() {
                 />
               </div>
               <div
-                className={`flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7 ${
-                  product.wide ? "lg:min-h-[360px]" : ""
+                className={`flex flex-1 flex-col p-6 sm:min-h-[280px] md:p-7 ${
+                  product.wide ? "lg:min-h-[320px]" : ""
                 }`}
               >
                 <div>
-                  <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex flex-wrap items-start gap-3">
                     <span className="grid size-10 place-items-center bg-[#177fed] text-white">
                       <product.icon className="size-5" />
                     </span>
@@ -290,12 +290,15 @@ function ProductsPage() {
                     <span className="bg-[#e9f3ff] px-3 py-1.5 text-[11px] font-extrabold uppercase text-[#061a63]">
                       {product.status}
                     </span>
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center gap-2 bg-[#061a63] px-4 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed]"
+                    >
+                      Book a demo <ArrowUpRight className="size-4" />
+                    </Link>
                   </div>
                   <h2 className="mt-6 text-2xl font-extrabold leading-tight md:text-3xl">{product.name}</h2>
-                  <p className="mt-4 text-sm font-medium leading-6 text-[#52617f] md:text-base md:leading-7">
-                    {product.description}
-                  </p>
-                  <div className="mt-5 grid gap-2">
+                  <div className="mt-5 grid gap-2.5">
                     {product.features.map((feature) => (
                       <div key={feature} className="flex items-start gap-2.5 text-xs font-bold leading-5 md:text-sm">
                         <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
@@ -304,12 +307,6 @@ function ProductsPage() {
                     ))}
                   </div>
                 </div>
-                <Link
-                  to="/contact"
-                  className="mt-6 inline-flex w-fit items-center gap-2 bg-[#061a63] px-4 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed] md:text-sm"
-                >
-                  Book a demo <ArrowUpRight className="size-4" />
-                </Link>
               </div>
             </article>
           ))}
@@ -356,7 +353,7 @@ function ProductsPage() {
                   />
                   <div className="absolute bottom-5 right-5 h-12 w-12 bg-[#177fed]/80" />
                 </div>
-                <div className="flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7">
+                <div className="flex flex-1 flex-col p-6 sm:min-h-[280px] md:p-7">
                   <div>
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="grid size-10 place-items-center bg-[#177fed] text-white">
@@ -372,10 +369,7 @@ function ProductsPage() {
                     <h3 className="mt-6 text-2xl font-extrabold leading-tight text-[#061a63] md:text-3xl">
                       {product.name}
                     </h3>
-                    <p className="mt-4 text-sm font-medium leading-6 text-[#52617f] md:text-base md:leading-7">
-                      {product.description}
-                    </p>
-                    <div className="mt-5 grid gap-2">
+                    <div className="mt-5 grid gap-2.5">
                       {product.features.map((feature) => (
                         <div key={feature} className="flex items-start gap-2.5 text-xs font-bold leading-5 md:text-sm">
                           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
