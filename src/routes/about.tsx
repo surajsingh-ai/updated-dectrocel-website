@@ -139,27 +139,29 @@ function AboutPage() {
             Collaborating with premier hospitals and medical institutions to advance AI-powered
             healthcare solutions and improve clinical outcomes.
           </p>
-          <div className="mt-10 grid gap-px overflow-hidden bg-slate-200 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-10 grid gap-4">
             {partners.map((partner) => (
               <article
                 key={partner.name}
-                className="flex min-h-[330px] flex-col bg-white p-7 transition-shadow duration-200 hover:shadow-[0_18px_48px_rgba(6,26,99,0.12)]"
+                className="grid gap-6 border border-[#d8e7f7] bg-white p-6 transition-shadow duration-200 hover:shadow-[0_18px_48px_rgba(6,26,99,0.12)] sm:grid-cols-[190px_1fr] sm:items-center lg:p-7"
               >
-                <div className="flex h-28 w-40 items-center justify-center border border-[#c8dff8] bg-[#f7fbff] p-4 shadow-[0_12px_30px_rgba(6,26,99,0.10)]">
+                <div className="flex h-28 w-40 items-center justify-center border border-[#c8dff8] bg-[#f7fbff] p-4 shadow-[0_12px_30px_rgba(6,26,99,0.10)] sm:mx-auto">
                   <img
                     src={partner.logo}
                     alt={partner.name}
                     className="max-h-24 max-w-32 object-contain opacity-100 contrast-125"
                   />
                 </div>
-                <h3 className="mt-8 text-2xl font-extrabold">{partner.name}</h3>
-                <div className="mt-5 grid gap-3">
-                  {partner.highlights.map((highlight) => (
-                    <div key={highlight} className="flex gap-3 text-sm font-medium leading-6 text-[#52617f]">
-                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
-                      <span>{highlight}</span>
-                    </div>
-                  ))}
+                <div>
+                  <h3 className="text-2xl font-extrabold">{partner.name}</h3>
+                  <div className="mt-5 grid gap-3 md:grid-cols-3">
+                    {partner.highlights.map((highlight) => (
+                      <div key={highlight} className="flex gap-3 text-sm font-medium leading-6 text-[#52617f]">
+                        <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-[#177fed]" />
+                        <span>{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </article>
             ))}
