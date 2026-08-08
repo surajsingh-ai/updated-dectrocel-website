@@ -22,7 +22,7 @@ export const Route = createFileRoute("/modes-of-integration")({
 const integrationModes = [
   {
     icon: Network,
-    title: "DecXpert PACS Platform",
+    title: "DecXpert AI for PACS",
     text: "Seamlessly integrate DecXpert into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
     points: [
       "PACS integration",
@@ -35,7 +35,7 @@ const integrationModes = [
   },
   {
     icon: Code2,
-    title: "DecXpert API Platform",
+    title: "DecXpert API integration",
     text: "Access DecXpert capabilities through secure REST APIs and integrate diagnostic intelligence directly into software products.",
     points: [
       "Secure API key access",
