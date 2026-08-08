@@ -40,7 +40,7 @@ const products = [
     description:
       "Desktop application where users can manually upload X-ray images for AI analysis and instant reporting.",
     image: mxProductImg,
-    imageClassName: "object-cover object-center",
+    imageClassName: "object-cover",
     features: [
       "Easy drag-and-drop upload",
       "Instant AI analysis",
@@ -263,15 +263,15 @@ function ProductsPage() {
               }`}
             >
               <div
-                className={`h-52 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
-                  product.wide ? "sm:basis-[42%] lg:basis-[36%]" : "sm:basis-[42%]"
+                className={`h-44 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
+                  product.wide ? "sm:basis-[36%] lg:basis-[32%]" : "sm:basis-[36%]"
                 }`}
               >
                 <img
                   src={product.image}
                   alt=""
                   aria-hidden
-                  className={`size-full opacity-92 ${product.imageClassName ?? "object-cover"}`}
+                  className={`size-full object-top opacity-92 ${product.imageClassName ?? "object-cover"}`}
                 />
               </div>
               <div
@@ -345,14 +345,14 @@ function ProductsPage() {
                 key={product.name}
                 className="flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row"
               >
-                <div className="relative h-52 shrink-0 overflow-hidden bg-[#ddecff] sm:h-auto sm:basis-[42%]">
+                <div className="relative h-44 shrink-0 overflow-hidden bg-[#ddecff] sm:h-auto sm:basis-[36%]">
                   <img
                     src={product.image}
                     alt=""
                     aria-hidden
                     loading="lazy"
                     decoding="async"
-                    className="size-full object-cover opacity-92"
+                    className="size-full object-cover object-top opacity-92"
                   />
                   <div className="absolute bottom-5 right-5 h-12 w-12 bg-[#177fed]/80" />
                 </div>
