@@ -89,7 +89,7 @@ const products = [
   },
   {
     icon: ScanLine,
-    name: "DecXpert AI CT Abdomen",
+    name: "DecXpert CT Abdomen",
     label: "Advanced abdominal CT analysis",
     status: "Available now",
     description:
@@ -108,7 +108,7 @@ const products = [
   },
   {
     icon: ScanLine,
-    name: "DecXpert AI MRI",
+    name: "DecXpert MRI",
     label: "Next-gen MRI analysis",
     status: "Available now",
     description:
@@ -162,7 +162,7 @@ const products = [
   },
   {
     icon: ScanLine,
-    name: "DecXpert AI Mammography",
+    name: "DecXpert Mammography",
     label: "Breast imaging AI",
     status: "Available now",
     description:

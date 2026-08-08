@@ -14,6 +14,7 @@ import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as ResearchRouteImport } from './routes/research'
 import { Route as ProductsRouteImport } from './routes/products'
+import { Route as ModesOfIntegrationRouteImport } from './routes/modes-of-integration'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -44,6 +45,11 @@ const ProductsRoute = ProductsRouteImport.update({
   path: '/products',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ModesOfIntegrationRoute = ModesOfIntegrationRouteImport.update({
+  id: '/modes-of-integration',
+  path: '/modes-of-integration',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EvidenceRoute = EvidenceRouteImport.update({
   id: '/evidence',
   path: '/evidence',
@@ -70,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/evidence': typeof EvidenceRoute
+  '/modes-of-integration': typeof ModesOfIntegrationRoute
   '/products': typeof ProductsRoute
   '/research': typeof ResearchRoute
   '/resources': typeof ResourcesRoute
@@ -81,6 +88,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/evidence': typeof EvidenceRoute
+  '/modes-of-integration': typeof ModesOfIntegrationRoute
   '/products': typeof ProductsRoute
   '/research': typeof ResearchRoute
   '/resources': typeof ResourcesRoute
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/evidence': typeof EvidenceRoute
+  '/modes-of-integration': typeof ModesOfIntegrationRoute
   '/products': typeof ProductsRoute
   '/research': typeof ResearchRoute
   '/resources': typeof ResourcesRoute
@@ -106,6 +115,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/evidence'
+    | '/modes-of-integration'
     | '/products'
     | '/research'
     | '/resources'
@@ -117,6 +127,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/evidence'
+    | '/modes-of-integration'
     | '/products'
     | '/research'
     | '/resources'
@@ -128,6 +139,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/evidence'
+    | '/modes-of-integration'
     | '/products'
     | '/research'
     | '/resources'
@@ -140,6 +152,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   EvidenceRoute: typeof EvidenceRoute
+  ModesOfIntegrationRoute: typeof ModesOfIntegrationRoute
   ProductsRoute: typeof ProductsRoute
   ResearchRoute: typeof ResearchRoute
   ResourcesRoute: typeof ResourcesRoute
@@ -184,6 +197,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/modes-of-integration': {
+      id: '/modes-of-integration'
+      path: '/modes-of-integration'
+      fullPath: '/modes-of-integration'
+      preLoaderRoute: typeof ModesOfIntegrationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/evidence': {
       id: '/evidence'
       path: '/evidence'
@@ -220,6 +240,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   EvidenceRoute: EvidenceRoute,
+  ModesOfIntegrationRoute: ModesOfIntegrationRoute,
   ProductsRoute: ProductsRoute,
   ResearchRoute: ResearchRoute,
   ResourcesRoute: ResourcesRoute,

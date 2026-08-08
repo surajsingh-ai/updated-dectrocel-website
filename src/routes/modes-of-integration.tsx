@@ -1,0 +1,106 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowUpRight, CheckCircle2, Cloud, Code2, Network, Workflow } from "lucide-react";
+
+import integrationHero from "@/assets/solutions-hero-generated.png";
+import { HarrisonHero } from "@/components/site/HarrisonHero";
+
+export const Route = createFileRoute("/modes-of-integration")({
+  head: () => ({
+    meta: [
+      { title: "Modes of Integration - Dectrocel" },
+      {
+        name: "description",
+        content:
+          "Flexible integration modes for deploying Dectrocel across PACS, RIS, APIs, teleradiology, and hospital imaging workflows.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "/modes-of-integration" }],
+  }),
+  component: ModesOfIntegrationPage,
+});
+
+const integrationModes = [
+  {
+    icon: Network,
+    title: "PACS / RIS Integration",
+    text: "Connect Dectrocel with existing PACS, RIS, and hospital imaging workflows for study routing, worklist support, and reporting operations.",
+    points: ["DICOM-ready workflow", "RIS/HIS alignment", "Study routing support"],
+  },
+  {
+    icon: Code2,
+    title: "API Integration",
+    text: "Use secure APIs to bring DecXpert capabilities into custom platforms, diagnostic center software, and enterprise healthcare products.",
+    points: ["REST API access", "Secure authentication", "Developer-ready endpoints"],
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Deployment",
+    text: "Deploy through scalable cloud infrastructure for multi-site hospitals, diagnostic chains, and distributed reporting teams.",
+    points: ["Scalable infrastructure", "Multi-location access", "Centralized operations"],
+  },
+  {
+    icon: Workflow,
+    title: "Teleradiology Workflow",
+    text: "Support remote reporting operations by combining AI-assisted triage, radiologist validation, and secure report delivery.",
+    points: ["Remote reporting support", "Radiologist review flow", "Fast turnaround operations"],
+  },
+];
+
+function ModesOfIntegrationPage() {
+  return (
+    <main className="bg-white text-[#061a63]">
+      <HarrisonHero
+        eyebrow="Modes of Integration"
+        title="Flexible integration for clinical imaging workflows."
+        subtitle="Dectrocel can be deployed through PACS/RIS connections, secure APIs, cloud workflows, and teleradiology operations."
+        image={integrationHero}
+        imageClassName="object-center"
+        cta="Book a demo"
+      />
+
+      <section className="bg-[#f5f9ff] px-6 py-20 lg:px-8">
+        <div className="mx-auto grid max-w-[1240px] gap-5 md:grid-cols-2">
+          {integrationModes.map((mode) => (
+            <article
+              key={mode.title}
+              className="group border border-[#c8dff8] bg-white p-7 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(23,127,237,0.12)] md:p-9"
+            >
+              <span className="grid size-12 place-items-center bg-[#177fed] text-white">
+                <mode.icon className="size-6" />
+              </span>
+              <h2 className="mt-7 text-2xl font-extrabold leading-tight md:text-3xl">
+                {mode.title}
+              </h2>
+              <p className="mt-4 text-base font-medium leading-7 text-[#52617f]">{mode.text}</p>
+              <div className="mt-6 grid gap-3">
+                {mode.points.map((point) => (
+                  <div key={point} className="flex items-start gap-3 text-sm font-bold text-[#24365f]">
+                    <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-[#177fed]" />
+                    <span>{point}</span>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-[1240px] border border-[#c8dff8] bg-white p-8 text-center shadow-[0_18px_50px_rgba(23,127,237,0.10)] md:p-12">
+          <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#177fed]">
+            Deployment planning
+          </p>
+          <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold leading-tight md:text-5xl">
+            Choose the integration model that fits your clinical workflow.
+          </h2>
+          <Link
+            to="/contact"
+            className="mt-8 inline-flex items-center gap-3 bg-[#061a63] px-6 py-4 text-sm font-extrabold text-white transition-colors hover:bg-[#177fed]"
+          >
+            Request integration support <ArrowUpRight className="size-4" />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -31,11 +31,11 @@ export function Footer() {
       ],
     },
     {
-      title: "Resources",
+      title: "Modes of Integration",
       links: [
-        { label: "Whitepapers", to: "/resources" as const },
-        { label: "Webinars", to: "/resources" as const },
-        { label: "Guides", to: "/resources" as const },
+        { label: "PACS/RIS", to: "/modes-of-integration" as const },
+        { label: "API Access", to: "/modes-of-integration" as const },
+        { label: "Teleradiology", to: "/modes-of-integration" as const },
       ],
     },
     {
