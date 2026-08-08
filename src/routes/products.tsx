@@ -4,7 +4,7 @@ import { ArrowUpRight, CheckCircle2, Cpu, ScanLine, Smartphone } from "lucide-re
 import ctProductImg from "@/assets/CT.png";
 import ctAbdomenImg from "@/assets/CT_abdomen.png";
 import ctPetImg from "@/assets/CT_pet.png";
-import lgpImg from "@/assets/my-lgp-health-product-scan-grid.png";
+import lgpImg from "@/assets/my-lgp-health-liver-bw.png";
 import mammographyImg from "@/assets/memmography.png";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
