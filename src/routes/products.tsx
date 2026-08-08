@@ -81,7 +81,7 @@ const products = [
       "Provides head-to-toe CT analysis",
       "Multi-slice CT analysis",
       "AI-powered detection",
-      "3D visualization support",
+      "3D volumetric analysis",
       "ML-based predictions",
     ],
   },
@@ -117,7 +117,7 @@ const products = [
       "Advanced tissue characterization",
       "Automated lesion detection",
       "Quantitative imaging biomarkers",
-      "Integrated 3D visualization",
+      "3D volumetric analysis",
     ],
   },
   {
