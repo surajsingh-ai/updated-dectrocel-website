@@ -1,14 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, CheckCircle2, Cpu, Network, ScanLine, Smartphone } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Cpu, ScanLine, Smartphone } from "lucide-react";
 
 import ctProductImg from "@/assets/CT.png";
 import ctAbdomenImg from "@/assets/CT_abdomen.png";
 import ctPetImg from "@/assets/CT_pet.png";
 import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
-import neuralBg from "@/assets/neural-bg.jpg";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
-import pacsImg from "@/assets/pacs1.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
 import chestXrayImg from "@/assets/chest.png";
 import mriScanImg from "@/assets/MRI_scan.png";
@@ -120,44 +118,6 @@ const products = [
       "Automated lesion detection",
       "Quantitative imaging biomarkers",
       "Integrated 3D visualization",
-    ],
-  },
-  {
-    icon: Network,
-    name: "DecXpert PACS Platform",
-    label: "PACS integration and workflow automation",
-    status: "Integration service",
-    description:
-      "Seamlessly integrate DecXpert AI into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
-    image: pacsImg,
-    imageClassName: "object-cover object-center",
-    features: [
-      "PACS integration",
-      "RIS/HIS connectivity",
-      "DICOM compatibility",
-      "Automated study routing",
-      "Worklist prioritization",
-      "Across all modality and teleradiology",
-      "Enterprise deployment support",
-    ],
-  },
-  {
-    icon: Network,
-    name: "DecXpert API Platform",
-    label: "AI API integration platform",
-    status: "Developer platform",
-    description:
-      "Access DecXpert AI capabilities through secure REST APIs and integrate advanced diagnostic intelligence directly into your software products.",
-    image: neuralBg,
-    features: [
-      "Secure API key access",
-      "RESTful API endpoints",
-      "X-Ray AI APIs",
-      "CT analysis APIs",
-      "Real-time inference",
-      "Developer documentation",
-      "SDK support",
-      "Enterprise-grade security",
     ],
   },
   {

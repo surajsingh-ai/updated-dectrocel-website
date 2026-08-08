@@ -22,15 +22,29 @@ export const Route = createFileRoute("/modes-of-integration")({
 const integrationModes = [
   {
     icon: Network,
-    title: "PACS / RIS Integration",
-    text: "Connect Dectrocel with existing PACS, RIS, and hospital imaging workflows for study routing, worklist support, and reporting operations.",
-    points: ["DICOM-ready workflow", "RIS/HIS alignment", "Study routing support"],
+    title: "DecXpert PACS Platform",
+    text: "Seamlessly integrate DecXpert into existing PACS, RIS, and hospital workflows without disrupting clinical operations.",
+    points: [
+      "PACS integration",
+      "RIS/HIS connectivity",
+      "DICOM compatibility",
+      "Automated study routing",
+      "Worklist prioritization",
+      "Enterprise deployment support",
+    ],
   },
   {
     icon: Code2,
-    title: "API Integration",
-    text: "Use secure APIs to bring DecXpert capabilities into custom platforms, diagnostic center software, and enterprise healthcare products.",
-    points: ["REST API access", "Secure authentication", "Developer-ready endpoints"],
+    title: "DecXpert API Platform",
+    text: "Access DecXpert capabilities through secure REST APIs and integrate diagnostic intelligence directly into software products.",
+    points: [
+      "Secure API key access",
+      "RESTful API endpoints",
+      "X-Ray and CT analysis APIs",
+      "Real-time inference",
+      "Developer documentation",
+      "Enterprise-grade security",
+    ],
   },
   {
     icon: Cloud,
