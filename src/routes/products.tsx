@@ -65,9 +65,6 @@ const products = [
       "262 skeletal pathologies",
       "Head-to-toe skeletal analysis",
       "Real-time AI analysis and triage",
-      "Explainable AI heatmaps",
-      "Batch processing support",
-      "Automated structured reporting",
     ],
   },
   {
@@ -101,8 +98,6 @@ const products = [
       "Kidney analysis",
       "Pancreas assessment",
       "Volumetric measurements",
-      "Vascular mapping",
-      "Comprehensive reporting",
     ],
   },
   {
@@ -263,9 +258,9 @@ function ProductsPage() {
               }`}
             >
               <div
-                className={`h-40 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-[280px] ${
+                className={`h-40 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
                   product.wide ? "sm:basis-[36%] lg:basis-[32%]" : "sm:basis-[36%]"
-                } ${product.wide ? "lg:h-[320px]" : ""}`}
+                }`}
               >
                 <img
                   src={product.image}
@@ -275,9 +270,7 @@ function ProductsPage() {
                 />
               </div>
               <div
-                className={`flex flex-1 flex-col p-6 sm:min-h-[280px] md:p-7 ${
-                  product.wide ? "lg:min-h-[320px]" : ""
-                }`}
+                className="flex flex-1 flex-col p-6 md:p-7"
               >
                 <div className="flex h-full flex-col">
                   <div className="flex items-start justify-between gap-2">
