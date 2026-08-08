@@ -279,17 +279,11 @@ function ProductsPage() {
                   product.wide ? "lg:min-h-[320px]" : ""
                 }`}
               >
-                <div>
-                  <div className="flex flex-wrap items-start gap-3">
-                    <span className="grid size-10 place-items-center bg-[#177fed] text-white">
-                      <product.icon className="size-5" />
-                    </span>
-                    <span className="min-w-0 flex-1 text-[11px] font-extrabold uppercase leading-snug text-[#177fed]">
-                      {product.label}
-                    </span>
-                    <span className="bg-[#e9f3ff] px-3 py-1.5 text-[11px] font-extrabold uppercase text-[#061a63]">
-                      {product.status}
-                    </span>
+                <div className="flex h-full flex-col">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <h2 className="max-w-[16rem] text-2xl font-extrabold leading-tight md:text-3xl">
+                      {product.name}
+                    </h2>
                     <Link
                       to="/contact"
                       className="inline-flex items-center gap-2 bg-[#061a63] px-4 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed]"
@@ -297,7 +291,6 @@ function ProductsPage() {
                       Book a demo <ArrowUpRight className="size-4" />
                     </Link>
                   </div>
-                  <h2 className="mt-6 text-2xl font-extrabold leading-tight md:text-3xl">{product.name}</h2>
                   <div className="mt-5 grid gap-2.5">
                     {product.features.map((feature) => (
                       <div key={feature} className="flex items-start gap-2.5 text-xs font-bold leading-5 md:text-sm">
@@ -354,19 +347,8 @@ function ProductsPage() {
                   <div className="absolute bottom-5 right-5 h-12 w-12 bg-[#177fed]/80" />
                 </div>
                 <div className="flex flex-1 flex-col p-6 sm:min-h-[280px] md:p-7">
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="grid size-10 place-items-center bg-[#177fed] text-white">
-                        <ScanLine className="size-5" />
-                      </span>
-                      <span className="min-w-0 flex-1 text-[11px] font-extrabold uppercase leading-snug text-[#177fed]">
-                        {product.label}
-                      </span>
-                      <span className="bg-[#177fed] px-3 py-1.5 text-[11px] font-extrabold uppercase text-white">
-                        Upcoming
-                      </span>
-                    </div>
-                    <h3 className="mt-6 text-2xl font-extrabold leading-tight text-[#061a63] md:text-3xl">
+                  <div className="flex h-full flex-col">
+                    <h3 className="text-2xl font-extrabold leading-tight text-[#061a63] md:text-3xl">
                       {product.name}
                     </h3>
                     <div className="mt-5 grid gap-2.5">
