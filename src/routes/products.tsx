@@ -224,17 +224,15 @@ function ProductsPage() {
         eyebrow="Products"
         title="Healthcare AI products built for clinical work."
         afterTitle={
-          <div className="mx-auto max-w-5xl border border-[#c8dff8] bg-[#f5f9ff] p-4 text-left shadow-[0_18px_50px_rgba(23,127,237,0.10)] sm:p-5 md:p-6">
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto max-w-5xl bg-[#f5f9ff] p-5 text-left sm:p-6 md:p-7">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
               {modalityCoverage.map((modality) => (
                 <div
                   key={modality}
-                  className="border border-[#b8d7f7] bg-white px-3 py-2.5 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(23,127,237,0.14)]"
+                  className="flex items-start gap-2 text-[12px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-sm"
                 >
-                  <div className="flex items-start gap-2 text-[11px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-xs">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
-                    <span className="min-w-0 break-words">{modality}</span>
-                  </div>
+                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
+                  <span className="min-w-0 break-words">{modality}</span>
                 </div>
               ))}
             </div>
