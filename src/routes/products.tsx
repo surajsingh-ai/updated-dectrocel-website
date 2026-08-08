@@ -40,6 +40,7 @@ const products = [
     description:
       "Desktop application where users can manually upload X-ray images for AI analysis and instant reporting.",
     image: mxProductImg,
+    imageClassName: "object-contain bg-[#061a63]",
     features: [
       "Easy drag-and-drop upload",
       "Instant AI analysis",
