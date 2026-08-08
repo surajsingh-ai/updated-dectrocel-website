@@ -273,11 +273,9 @@ function ProductsPage() {
                 className="flex flex-1 flex-col p-6 md:p-7"
               >
                 <div className="flex h-full flex-col">
-                  <div className="flex flex-wrap items-start gap-3">
+                  <div className="flex flex-wrap items-center gap-3">
                     <h2
-                      className={`min-w-0 text-2xl font-extrabold leading-tight md:text-3xl ${
-                        ["DecXpert MX", "DecXpert MRI"].includes(product.name) ? "whitespace-nowrap" : ""
-                      }`}
+                      className="min-w-0 text-2xl font-extrabold leading-tight md:text-[28px]"
                     >
                       {product.name}
                     </h2>
