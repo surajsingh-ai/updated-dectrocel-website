@@ -187,34 +187,52 @@ const upcomingProducts = [
   },
 ];
 
-const modalityCoverage = [
-  "MRI Brain",
-  "MRI Brain w/ Contrast",
-  "MRI Epilepsy",
-  "MRI Spine",
-  "MRI Body - Head-Neck, Upper/Lower Abd, Pelvis",
-  "MRCP",
-  "MRI Whole Abdomen",
-  "MRI Joints / Limbs/ Fistulogram",
-  "MRI Prostate / Breast / Pituitary",
-  "MRI Screening",
-  "MRA / MRV / MRS",
-  "CT Brain / PNS / Orbit",
-  "CT Face",
-  "CT Head with Contrast",
-  "HRCT Temporal Bone",
-  "CT Body without Contrast",
-  "CT Body - with Contrast",
-  "CT Thorax",
-  "Triple Phase CT",
-  "CT Angio - PA",
-  "CT Angio - CA",
-  "CT - Angiography & Venography",
-  "CT - Urography",
-  "X-Ray Chest",
-  "X-Ray Other - per additional view",
-  "Special X-ray(contrast media)",
-  "Mammography",
+const modalityGroups = [
+  {
+    title: "MRI",
+    items: [
+      "MRI Brain",
+      "MRI Brain w/ Contrast",
+      "MRI Epilepsy",
+      "MRI Spine",
+      "MRI Body - Head-Neck, Upper/Lower Abd, Pelvis",
+      "MRCP",
+      "MRI Whole Abdomen",
+      "MRI Joints / Limbs/ Fistulogram",
+      "MRI Prostate / Breast / Pituitary",
+      "MRI Screening",
+      "MRA / MRV / MRS",
+    ],
+  },
+  {
+    title: "CT",
+    items: [
+      "CT Brain / PNS / Orbit",
+      "CT Face",
+      "CT Head with Contrast",
+      "HRCT Temporal Bone",
+      "CT Body without Contrast",
+      "CT Body - with Contrast",
+      "CT Thorax",
+      "Triple Phase CT",
+      "CT Angio - PA",
+      "CT Angio - CA",
+      "CT - Angiography & Venography",
+      "CT - Urography",
+    ],
+  },
+  {
+    title: "X-Ray",
+    items: [
+      "X-Ray Chest",
+      "X-Ray Other - per additional view",
+      "Special X-ray(contrast media)",
+    ],
+  },
+  {
+    title: "Breast Imaging",
+    items: ["Mammography"],
+  },
 ];
 
 function ProductsPage() {
@@ -224,15 +242,30 @@ function ProductsPage() {
         eyebrow="Products"
         title="Healthcare AI products built for clinical work."
         afterTitle={
-          <div className="mx-auto max-w-5xl bg-[#f5f9ff] p-5 text-left sm:p-6 md:p-7">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
-              {modalityCoverage.map((modality) => (
-                <div
-                  key={modality}
-                  className="flex items-start gap-2 text-[12px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-sm"
-                >
-                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#177fed]" />
-                  <span className="min-w-0 break-words">{modality}</span>
+          <div className="mx-auto max-w-5xl border-l-4 border-[#177fed] bg-[#f5f9ff] px-5 py-6 text-left sm:px-7 md:px-9 md:py-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.05fr_1.05fr_0.8fr]">
+              {modalityGroups.map((group) => (
+                <div key={group.title}>
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="h-px flex-1 bg-[#c8dff8]" />
+                    <h3 className="shrink-0 text-xs font-extrabold uppercase tracking-[0.18em] text-[#177fed]">
+                      {group.title}
+                    </h3>
+                    <span className="h-px flex-1 bg-[#c8dff8]" />
+                  </div>
+                  <div className="grid gap-2.5">
+                    {group.items.map((modality) => (
+                      <div
+                        key={modality}
+                        className="flex items-start gap-3 text-[12px] font-extrabold uppercase leading-snug text-[#061a63] sm:text-sm"
+                      >
+                        <span className="mt-1.5 grid size-3 shrink-0 place-items-center rounded-full border border-[#8bc4ff] bg-white">
+                          <span className="size-1.5 rounded-full bg-[#177fed]" />
+                        </span>
+                        <span className="min-w-0 break-words">{modality}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
