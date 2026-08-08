@@ -31,7 +31,7 @@ export function Footer() {
       ],
     },
     {
-      title: "Modes of Integration",
+      title: "Integration",
       links: [
         { label: "PACS/RIS", to: "/modes-of-integration" as const },
         { label: "API Access", to: "/modes-of-integration" as const },

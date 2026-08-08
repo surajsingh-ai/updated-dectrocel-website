@@ -9,7 +9,7 @@ export function Header() {
     { to: "/solutions", label: "Solutions" },
     { to: "/teleradiology-services", label: "Teleradiology" },
     { to: "/evidence", label: "Evidence" },
-    { to: "/modes-of-integration", label: "Modes of Integration" },
+    { to: "/modes-of-integration", label: "Integration" },
     { to: "/about", label: "Company" },
     { to: "/contact", label: "Contact" },
   ] as const;
