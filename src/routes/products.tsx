@@ -258,9 +258,9 @@ function ProductsPage() {
               }`}
             >
               <div
-                className={`h-40 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
+                className={`h-40 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-[300px] ${
                   product.wide ? "sm:basis-[36%] lg:basis-[32%]" : "sm:basis-[36%]"
-                }`}
+                } ${product.wide ? "lg:h-[320px]" : ""}`}
               >
                 <img
                   src={product.image}
