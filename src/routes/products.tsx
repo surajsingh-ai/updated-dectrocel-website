@@ -280,13 +280,13 @@ function ProductsPage() {
                 }`}
               >
                 <div className="flex h-full flex-col">
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <h2 className="max-w-[16rem] text-2xl font-extrabold leading-tight md:text-3xl">
+                  <div className="flex items-start justify-between gap-2">
+                    <h2 className="min-w-0 flex-1 text-2xl font-extrabold leading-tight md:text-3xl">
                       {product.name}
                     </h2>
                     <Link
                       to="/contact"
-                      className="inline-flex items-center gap-2 bg-[#061a63] px-4 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed]"
+                      className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap bg-[#061a63] px-3 py-2.5 text-xs font-extrabold text-white hover:bg-[#177fed]"
                     >
                       Book a demo <ArrowUpRight className="size-4" />
                     </Link>
