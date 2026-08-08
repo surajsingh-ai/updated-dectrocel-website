@@ -4,7 +4,7 @@ import { ArrowUpRight, CheckCircle2, Cpu, ScanLine, Smartphone } from "lucide-re
 import ctProductImg from "@/assets/CT.png";
 import ctAbdomenImg from "@/assets/CT_abdomen.png";
 import ctPetImg from "@/assets/CT_pet.png";
-import lgpImg from "@/assets/my-lgp-health-ai-liver.png";
+import lgpImg from "@/assets/my-lgp-health-scan-grid.png";
 import mammographyImg from "@/assets/memmography.png";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
@@ -145,6 +145,7 @@ const products = [
     description:
       "Mobile application for chronic liver disease assessment using Artificial Intelligence and Machine Learning algorithms to support early detection and clinical decision-making.",
     image: lgpImg,
+    wide: true,
     features: [
       "Multi-dimensional symptom index",
       "LDA and QDA classification",
@@ -257,9 +258,15 @@ function ProductsPage() {
           {products.map((product) => (
             <article
               key={product.name}
-              className="flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row"
+              className={`flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row ${
+                product.wide ? "lg:col-span-2" : ""
+              }`}
             >
-              <div className="h-52 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto sm:basis-[42%]">
+              <div
+                className={`h-52 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
+                  product.wide ? "sm:basis-[42%] lg:basis-[36%]" : "sm:basis-[42%]"
+                }`}
+              >
                 <img
                   src={product.image}
                   alt=""
@@ -267,7 +274,11 @@ function ProductsPage() {
                   className={`size-full opacity-92 ${product.imageClassName ?? "object-cover"}`}
                 />
               </div>
-              <div className="flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7">
+              <div
+                className={`flex min-h-[300px] flex-1 flex-col justify-between p-6 md:p-7 ${
+                  product.wide ? "lg:min-h-[360px]" : ""
+                }`}
+              >
                 <div>
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="grid size-10 place-items-center bg-[#177fed] text-white">
