@@ -8,7 +8,7 @@ import lgpImg from "@/assets/my-lgp-health-liver-pancreas-card.jpg";
 import mammographyImg from "@/assets/memmography.png";
 import allModalityHeroImg from "@/assets/all-modality-products-hero.png";
 import pipeline3d from "@/assets/medical-ai-pipeline-3d.png";
-import chestXrayImg from "@/assets/chest.png";
+import mxProductImg from "@/assets/mx1.png";
 import mriScanImg from "@/assets/MRI_scan.png";
 import sxProductImg from "@/assets/SX.png";
 import ultrasoundProductImg from "@/assets/ultrasound-ai-product.png";
@@ -39,7 +39,7 @@ const products = [
     status: "Available now",
     description:
       "Desktop application where users can manually upload X-ray images for AI analysis and instant reporting.",
-    image: chestXrayImg,
+    image: mxProductImg,
     features: [
       "Easy drag-and-drop upload",
       "Instant AI analysis",
