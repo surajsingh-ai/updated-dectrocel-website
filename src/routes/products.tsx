@@ -263,9 +263,9 @@ function ProductsPage() {
               }`}
             >
               <div
-                className={`h-44 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-auto ${
+                className={`h-40 shrink-0 overflow-hidden bg-[#eef5ff] sm:h-[280px] ${
                   product.wide ? "sm:basis-[36%] lg:basis-[32%]" : "sm:basis-[36%]"
-                }`}
+                } ${product.wide ? "lg:h-[320px]" : ""}`}
               >
                 <img
                   src={product.image}
@@ -345,7 +345,7 @@ function ProductsPage() {
                 key={product.name}
                 className="flex flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_24px_58px_rgba(6,26,99,0.10)] sm:flex-row"
               >
-                <div className="relative h-44 shrink-0 overflow-hidden bg-[#ddecff] sm:h-auto sm:basis-[36%]">
+                <div className="relative h-40 shrink-0 overflow-hidden bg-[#ddecff] sm:h-[280px] sm:basis-[36%]">
                   <img
                     src={product.image}
                     alt=""
